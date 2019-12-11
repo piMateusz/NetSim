@@ -4,5 +4,7 @@
 
 #ifndef NETSIM_PACKAGE_HPP
 #define NETSIM_PACKAGE_HPP
-
+class Package{
+    ;
+};
 #endif //NETSIM_PACKAGE_HPP

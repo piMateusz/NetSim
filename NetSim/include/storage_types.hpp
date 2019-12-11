@@ -4,5 +4,17 @@
 
 #ifndef NETSIM_STORAGE_TYPES_HPP
 #define NETSIM_STORAGE_TYPES_HPP
+// enum type PackageQueueType
 
+class IPackageStockpile{
+    ;
+};
+
+class IPackageQueue{
+    ;
+};
+
+class PackageQueue{
+    ;
+};
 #endif //NETSIM_STORAGE_TYPES_HPP

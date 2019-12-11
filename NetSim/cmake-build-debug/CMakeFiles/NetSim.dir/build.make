@@ -43,10 +43,10 @@ RM = /opt/clion/bin/cmake/linux/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/eaiib/pilecki/CLionProjects/NetSim
+CMAKE_SOURCE_DIR = /home/eaiib/pilecki/NetSim/NetSim
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug
+CMAKE_BINARY_DIR = /home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/NetSim.dir/depend.make
@@ -59,42 +59,42 @@ include CMakeFiles/NetSim.dir/flags.make
 
 CMakeFiles/NetSim.dir/main.cpp.o: CMakeFiles/NetSim.dir/flags.make
 CMakeFiles/NetSim.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NetSim.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NetSim.dir/main.cpp.o -c /home/eaiib/pilecki/CLionProjects/NetSim/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NetSim.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NetSim.dir/main.cpp.o -c /home/eaiib/pilecki/NetSim/NetSim/main.cpp
 
 CMakeFiles/NetSim.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eaiib/pilecki/CLionProjects/NetSim/main.cpp > CMakeFiles/NetSim.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eaiib/pilecki/NetSim/NetSim/main.cpp > CMakeFiles/NetSim.dir/main.cpp.i
 
 CMakeFiles/NetSim.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eaiib/pilecki/CLionProjects/NetSim/main.cpp -o CMakeFiles/NetSim.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eaiib/pilecki/NetSim/NetSim/main.cpp -o CMakeFiles/NetSim.dir/main.cpp.s
 
 CMakeFiles/NetSim.dir/src/package.cpp.o: CMakeFiles/NetSim.dir/flags.make
 CMakeFiles/NetSim.dir/src/package.cpp.o: ../src/package.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NetSim.dir/src/package.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NetSim.dir/src/package.cpp.o -c /home/eaiib/pilecki/CLionProjects/NetSim/src/package.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NetSim.dir/src/package.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NetSim.dir/src/package.cpp.o -c /home/eaiib/pilecki/NetSim/NetSim/src/package.cpp
 
 CMakeFiles/NetSim.dir/src/package.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim.dir/src/package.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eaiib/pilecki/CLionProjects/NetSim/src/package.cpp > CMakeFiles/NetSim.dir/src/package.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eaiib/pilecki/NetSim/NetSim/src/package.cpp > CMakeFiles/NetSim.dir/src/package.cpp.i
 
 CMakeFiles/NetSim.dir/src/package.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim.dir/src/package.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eaiib/pilecki/CLionProjects/NetSim/src/package.cpp -o CMakeFiles/NetSim.dir/src/package.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eaiib/pilecki/NetSim/NetSim/src/package.cpp -o CMakeFiles/NetSim.dir/src/package.cpp.s
 
 CMakeFiles/NetSim.dir/src/storage_types.cpp.o: CMakeFiles/NetSim.dir/flags.make
 CMakeFiles/NetSim.dir/src/storage_types.cpp.o: ../src/storage_types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NetSim.dir/src/storage_types.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NetSim.dir/src/storage_types.cpp.o -c /home/eaiib/pilecki/CLionProjects/NetSim/src/storage_types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NetSim.dir/src/storage_types.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/NetSim.dir/src/storage_types.cpp.o -c /home/eaiib/pilecki/NetSim/NetSim/src/storage_types.cpp
 
 CMakeFiles/NetSim.dir/src/storage_types.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim.dir/src/storage_types.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eaiib/pilecki/CLionProjects/NetSim/src/storage_types.cpp > CMakeFiles/NetSim.dir/src/storage_types.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/eaiib/pilecki/NetSim/NetSim/src/storage_types.cpp > CMakeFiles/NetSim.dir/src/storage_types.cpp.i
 
 CMakeFiles/NetSim.dir/src/storage_types.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim.dir/src/storage_types.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eaiib/pilecki/CLionProjects/NetSim/src/storage_types.cpp -o CMakeFiles/NetSim.dir/src/storage_types.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/eaiib/pilecki/NetSim/NetSim/src/storage_types.cpp -o CMakeFiles/NetSim.dir/src/storage_types.cpp.s
 
 # Object files for target NetSim
 NetSim_OBJECTS = \
@@ -110,7 +110,7 @@ NetSim: CMakeFiles/NetSim.dir/src/package.cpp.o
 NetSim: CMakeFiles/NetSim.dir/src/storage_types.cpp.o
 NetSim: CMakeFiles/NetSim.dir/build.make
 NetSim: CMakeFiles/NetSim.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable NetSim"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable NetSim"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NetSim.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -123,6 +123,6 @@ CMakeFiles/NetSim.dir/clean:
 .PHONY : CMakeFiles/NetSim.dir/clean
 
 CMakeFiles/NetSim.dir/depend:
-	cd /home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eaiib/pilecki/CLionProjects/NetSim /home/eaiib/pilecki/CLionProjects/NetSim /home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug /home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug /home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/CMakeFiles/NetSim.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/eaiib/pilecki/NetSim/NetSim /home/eaiib/pilecki/NetSim/NetSim /home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug /home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug /home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NetSim.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/eaiib/pilecki/CLionProjects/NetSim
+# Install script for directory: /home/eaiib/pilecki/NetSim/NetSim
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

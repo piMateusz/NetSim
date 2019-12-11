@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug"/>
+				<Option working_dir="/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug"/>
+				<Option working_dir="/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NetSim">
-				<Option output="/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/NetSim" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug"/>
+				<Option output="/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/NetSim" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 NetSim"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 NetSim"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="NetSim/fast">
-				<Option output="/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/NetSim" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug"/>
+				<Option output="/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/NetSim" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,42 +67,57 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 NetSim/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 NetSim/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug"/>
+				<Option working_dir="/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/CLionProjects/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/eaiib/pilecki/CLionProjects/NetSim/include/package.hpp">
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/include/factory.hpp">
 			<Option target="NetSim"/>
 		</Unit>
-		<Unit filename="/home/eaiib/pilecki/CLionProjects/NetSim/include/storage_types.hpp">
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/include/helpers.hpp">
 			<Option target="NetSim"/>
 		</Unit>
-		<Unit filename="/home/eaiib/pilecki/CLionProjects/NetSim/include/types.hpp">
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/include/nodes.hpp">
 			<Option target="NetSim"/>
 		</Unit>
-		<Unit filename="/home/eaiib/pilecki/CLionProjects/NetSim/main.cpp">
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/include/package.hpp">
 			<Option target="NetSim"/>
 		</Unit>
-		<Unit filename="/home/eaiib/pilecki/CLionProjects/NetSim/src/package.cpp">
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/include/reports.hpp">
 			<Option target="NetSim"/>
 		</Unit>
-		<Unit filename="/home/eaiib/pilecki/CLionProjects/NetSim/src/storage_types.cpp">
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/include/simulation.hpp">
 			<Option target="NetSim"/>
 		</Unit>
-		<Unit filename="/home/eaiib/pilecki/CLionProjects/NetSim/CMakeLists.txt">
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/include/storage_types.hpp">
+			<Option target="NetSim"/>
+		</Unit>
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/include/types.hpp">
+			<Option target="NetSim"/>
+		</Unit>
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/main.cpp">
+			<Option target="NetSim"/>
+		</Unit>
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/src/package.cpp">
+			<Option target="NetSim"/>
+		</Unit>
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/src/storage_types.cpp">
+			<Option target="NetSim"/>
+		</Unit>
+		<Unit filename="/home/eaiib/pilecki/NetSim/NetSim/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
