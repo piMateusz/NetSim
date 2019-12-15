@@ -29,5 +29,11 @@ class IPackageQueue: public IPackageStockpile{
 };
 
 class PackageQueue: public IPackageQueue{
+    private:
+    public:
+        PackageQueue(PackageQueueType queueType);
+        Package pop();
+        PackageQueueType get_queue_type();
+        ~PackageQueue();
 };
 #endif //NETSIM_STORAGE_TYPES_HPP
