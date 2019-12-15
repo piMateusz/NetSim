@@ -5,10 +5,8 @@
 #ifndef NETSIM_STORAGE_TYPES_HPP
 #define NETSIM_STORAGE_TYPES_HPP
 
-#include <cstddef>
 #include "package.hpp"
 #include "types.hpp"
-#include <set>
 
 enum class PackageQueueType{
     LIFO, FIFO
@@ -16,8 +14,6 @@ enum class PackageQueueType{
 
 class IPackageStockpile{
     private:
-        static std::set<elementID> assigned_IDs;
-        static std::set<elementID> freed_IDs;
     public:
         virtual bool empty() = 0;
         virtual void push(Package &package) = 0;

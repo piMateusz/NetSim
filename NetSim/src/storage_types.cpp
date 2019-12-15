@@ -3,6 +3,4 @@
 //
 
 #include "storage_types.hpp"
-//Initializing empty sets
-std::set<elementID>  IPackageStockpile::assigned_IDs;
-std::set<elementID>  IPackageStockpile::freed_IDs;
+

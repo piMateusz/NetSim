@@ -3,6 +3,8 @@
 
 CMakeFiles/NetSim.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/NetSim.dir/src/package.cpp.obj: ../include/package.hpp
+CMakeFiles/NetSim.dir/src/package.cpp.obj: ../include/types.hpp
 CMakeFiles/NetSim.dir/src/package.cpp.obj: ../src/package.cpp
 
 CMakeFiles/NetSim.dir/src/storage_types.cpp.obj: ../include/package.hpp
