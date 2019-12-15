@@ -1,6 +1,17 @@
 cmake_minimum_required(VERSION 3.15)
 project(NetSim)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-add_executable(NetSim main.cpp include/package.hpp include/types.hpp include/storage_types.hpp src/package.cpp src/storage_types.cpp include/factory.hpp include/helpers.hpp include/nodes.hpp include/reports.hpp include/simulation.hpp)
+add_compile_options(-Wall -Wextra -Werror -Wpedantic -pedantic-errors)
+
+include_directories(
+        include
+)
+
+set(SOURCE_FILES
+        src/package.cpp
+        src/storage_types.cpp
+        )
+
+add_executable(NetSim ${SOURCE_FILES} main.cpp)

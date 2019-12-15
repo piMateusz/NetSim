@@ -1,3 +1,3 @@
-/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim.dir
-/home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim.dir
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/rebuild_cache.dir

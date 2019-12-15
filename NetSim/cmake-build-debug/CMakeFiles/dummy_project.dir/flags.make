@@ -6,5 +6,5 @@ CXX_FLAGS = -g   -Wall -Wextra -Werror -Wpedantic -pedantic-errors -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = @CMakeFiles/NetSim.dir/includes_CXX.rsp
+CXX_INCLUDES = @CMakeFiles/dummy_project.dir/includes_CXX.rsp
 

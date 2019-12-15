@@ -4,5 +4,7 @@
 
 #ifndef NETSIM_TYPES_HPP
 #define NETSIM_TYPES_HPP
-//alasy here
+
+using elementID = int;
+
 #endif //NETSIM_TYPES_HPP

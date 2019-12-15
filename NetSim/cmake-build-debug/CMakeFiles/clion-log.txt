@@ -1,4 +1,4 @@
-/opt/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/eaiib/pilecki/NetSim/NetSim
+"C:\Program Files\JetBrains\CLion 2019.3.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/eaiib/pilecki/NetSim/NetSim/cmake-build-debug
+-- Build files have been written to: C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug
