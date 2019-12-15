@@ -17,21 +17,21 @@ Package& Package::operator=(const Package& package){
 Package::Package(){
     if (freed_IDs.empty()) {
         if (assigned_IDs.empty()){
-            Package(1);
+            id_number = 1;
             assigned_IDs.insert(1);
         }
         else{
             auto it = assigned_IDs.end();
             it--;
-            Package(*it + 1);
+            id_number = *it + 1;
             assigned_IDs.insert(*it + 1);
         }
     }
     else{
         auto value = *freed_IDs.begin();
         freed_IDs.erase(value);
-        Package::Package(value);
+        id_number = value;
     }
-};
+}
 
 
