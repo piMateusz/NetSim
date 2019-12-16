@@ -30,6 +30,7 @@ class IPackageQueue: public IPackageStockpile{
 
 class PackageQueue: public IPackageQueue{
     private:
+        std::list products;
     public:
         PackageQueue(PackageQueueType queueType);
         Package pop();
