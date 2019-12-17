@@ -30,10 +30,11 @@ class IPackageQueue: public IPackageStockpile{
 
 class PackageQueue: public IPackageQueue{
     private:
+        std::list<Package> products;
     public:
         PackageQueue(PackageQueueType queueType);
-        Package pop();
-        PackageQueueType get_queue_type();
+        Package&& pop();
+        PackageQueueType const get_queue_type();
         ~PackageQueue();
 };
 #endif //NETSIM_STORAGE_TYPES_HPP
