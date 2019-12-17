@@ -8,10 +8,10 @@ Package&& PackageQueue::pop(){
     switch (PackageQueue::get_queue_type())
     {
         case PackageQueueType::FIFO:
-            auto popped_fifo = Package(std::move(products.front()))
+            auto popped_fifo = std::move(products.front())
             return popped_fifo;
         case PackageQueueType ::LIFO:
-            auto popped_lifo = Package(std::move(products.back()))
+            auto popped_lifo = std::move(products.back())
             return popped_lifo;
     }
 }
