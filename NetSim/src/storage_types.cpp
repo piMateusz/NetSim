@@ -5,13 +5,11 @@
 #include "storage_types.hpp"
 
 Package&& PackageQueue::pop(){
-    switch (PackageQueue::get_queue_type())
-    {
-        case PackageQueueType::FIFO:
-            auto popped_fifo = Package(std::move(products.front()))
-            return popped_fifo;
-        case PackageQueueType ::LIFO:
-            auto popped_lifo = Package(std::move(products.back()))
-            return popped_lifo;
+    if (PackageQueue::get_queue_type() == PackageQueueType::FIFO){
+        return std::move(products.front());
+    }
+    //else if PackageQueue::get_queue_type() == PackageQueueType::LIFO:
+    else{
+        return std::move(products.back());
     }
 }

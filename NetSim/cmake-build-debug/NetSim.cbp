@@ -25,12 +25,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 NetSim"/>
@@ -47,12 +47,12 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/mingw32"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include/c++/backward"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/../../../../include"/>
-					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
 					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/Makefile&quot;  VERBOSE=1 NetSim/fast"/>
