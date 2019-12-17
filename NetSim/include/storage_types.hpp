@@ -39,5 +39,6 @@ public:
     virtual void push(Package &package) override {products.push_back(package);} // zamienic na emplace_back oraz move
     virtual size_t size() override { return products.size();}
     ~PackageQueue();
+
 };
 #endif //NETSIM_STORAGE_TYPES_HPP
