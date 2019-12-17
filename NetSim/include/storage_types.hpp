@@ -13,7 +13,6 @@ enum class PackageQueueType{
 };
 
 class IPackageStockpile{
-    private:
     public:
         virtual bool empty() = 0;
         virtual void push(Package &package) = 0;
@@ -29,12 +28,16 @@ class IPackageQueue: public IPackageStockpile{
 };
 
 class PackageQueue: public IPackageQueue{
-    private:
-        std::list products;
-    public:
-        PackageQueue(PackageQueueType queueType);
-        Package pop();
-        PackageQueueType get_queue_type();
-        ~PackageQueue();
+private:
+    std::list<Package> products;
+    PackageQueueType queue_type;
+public:
+    PackageQueue(const PackageQueueType& queueType): queue_type(queueType){};
+    virtual Package&& pop() override ;
+    virtual PackageQueueType get_queue_type() override{ return queue_type;}
+    virtual bool empty() override { return products.empty();}
+    virtual void push(Package &package) override {products.push_back(package);} // zamienic na emplace_back oraz move
+    virtual size_t size() override { return products.size();}
+    ~PackageQueue();
 };
 #endif //NETSIM_STORAGE_TYPES_HPP
