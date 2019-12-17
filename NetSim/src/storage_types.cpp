@@ -14,10 +14,10 @@ PackageQueue::pop() const {
     switch (queueType)
     {
         case FIFO:
-            auto popped = Package(std::move(products.front()))
+            auto popped = std::move(products.front())
             return popped;
         case LIFO;
-            auto popped = Package(std::move(products.back()))
+            auto popped = std::move(products.back())
             return popped;
     }
 }
