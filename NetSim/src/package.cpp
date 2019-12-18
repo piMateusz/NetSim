@@ -9,9 +9,15 @@
 std::set<elementID> Package::assigned_IDs;
 std::set<elementID> Package::freed_IDs;
 
-Package& Package::operator=(const Package& package){
-    id_number = package.get_id();
+Package& Package::operator=(Package&& package){
+    id_number = std::move(package.get_id());
+    package.id_number = 0;
     return (*this);
+}
+
+Package::Package(Package &&package){
+    id_number = std::move(package.get_id());
+    package.id_number = 0;
 }
 
 Package::Package(){
