@@ -60,43 +60,43 @@ CMakeFiles/NetSim.dir/src/package.cpp.obj: CMakeFiles/NetSim.dir/flags.make
 CMakeFiles/NetSim.dir/src/package.cpp.obj: CMakeFiles/NetSim.dir/includes_CXX.rsp
 CMakeFiles/NetSim.dir/src/package.cpp.obj: ../src/package.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NetSim.dir/src/package.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\src\package.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\package.cpp"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\src\package.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\package.cpp"
 
 CMakeFiles/NetSim.dir/src/package.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim.dir/src/package.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\package.cpp" > CMakeFiles\NetSim.dir\src\package.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\package.cpp" > CMakeFiles\NetSim.dir\src\package.cpp.i
 
 CMakeFiles/NetSim.dir/src/package.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim.dir/src/package.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\package.cpp" -o CMakeFiles\NetSim.dir\src\package.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\package.cpp" -o CMakeFiles\NetSim.dir\src\package.cpp.s
 
 CMakeFiles/NetSim.dir/src/storage_types.cpp.obj: CMakeFiles/NetSim.dir/flags.make
 CMakeFiles/NetSim.dir/src/storage_types.cpp.obj: CMakeFiles/NetSim.dir/includes_CXX.rsp
 CMakeFiles/NetSim.dir/src/storage_types.cpp.obj: ../src/storage_types.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NetSim.dir/src/storage_types.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\src\storage_types.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\storage_types.cpp"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\src\storage_types.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\storage_types.cpp"
 
 CMakeFiles/NetSim.dir/src/storage_types.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim.dir/src/storage_types.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\storage_types.cpp" > CMakeFiles\NetSim.dir\src\storage_types.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\storage_types.cpp" > CMakeFiles\NetSim.dir\src\storage_types.cpp.i
 
 CMakeFiles/NetSim.dir/src/storage_types.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim.dir/src/storage_types.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\storage_types.cpp" -o CMakeFiles\NetSim.dir\src\storage_types.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\storage_types.cpp" -o CMakeFiles\NetSim.dir\src\storage_types.cpp.s
 
 CMakeFiles/NetSim.dir/main.cpp.obj: CMakeFiles/NetSim.dir/flags.make
 CMakeFiles/NetSim.dir/main.cpp.obj: CMakeFiles/NetSim.dir/includes_CXX.rsp
 CMakeFiles/NetSim.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NetSim.dir/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\main.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\main.cpp"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim.dir\main.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\main.cpp"
 
 CMakeFiles/NetSim.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim.dir/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\main.cpp" > CMakeFiles\NetSim.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\main.cpp" > CMakeFiles\NetSim.dir\main.cpp.i
 
 CMakeFiles/NetSim.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim.dir/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\main.cpp" -o CMakeFiles\NetSim.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\main.cpp" -o CMakeFiles\NetSim.dir\main.cpp.s
 
 # Object files for target NetSim
 NetSim_OBJECTS = \
