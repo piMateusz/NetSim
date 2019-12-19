@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/storage_types.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/storage_types.cpp.obj"
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/main_gtest.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj"
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_package.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj"
+  "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_storage_types.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -306,11 +306,19 @@ types.hpp
 set
 -
 
+../include/storage_types.hpp
+package.hpp
+../include/package.hpp
+types.hpp
+../include/types.hpp
+list
+-
+
 ../include/types.hpp
 
 C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_package.cpp
 gtest/gtest.h
 C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/gtest/gtest.h
-package.hpp
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/package.hpp
+storage_types.hpp
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/storage_types.hpp
 

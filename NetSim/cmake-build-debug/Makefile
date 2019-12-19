@@ -374,6 +374,33 @@ test/test_package.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_package.cpp.s
 .PHONY : test/test_package.cpp.s
 
+test/test_storage_types.obj: test/test_storage_types.cpp.obj
+
+.PHONY : test/test_storage_types.obj
+
+# target to build an object file
+test/test_storage_types.cpp.obj:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj
+.PHONY : test/test_storage_types.cpp.obj
+
+test/test_storage_types.i: test/test_storage_types.cpp.i
+
+.PHONY : test/test_storage_types.i
+
+# target to preprocess a source file
+test/test_storage_types.cpp.i:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.i
+.PHONY : test/test_storage_types.cpp.i
+
+test/test_storage_types.s: test/test_storage_types.cpp.s
+
+.PHONY : test/test_storage_types.s
+
+# target to generate assembly for a file
+test/test_storage_types.cpp.s:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.s
+.PHONY : test/test_storage_types.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -407,6 +434,9 @@ help:
 	@echo ... test/test_package.obj
 	@echo ... test/test_package.i
 	@echo ... test/test_package.s
+	@echo ... test/test_storage_types.obj
+	@echo ... test/test_storage_types.i
+	@echo ... test/test_storage_types.s
 .PHONY : help
 
 

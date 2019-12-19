@@ -3,7 +3,7 @@
 //
 
 #include "gtest/gtest.h"
-#include "package.hpp"
+#include "storage_types.hpp"
 
 TEST(NetWork_package_test, new_product) {
     Package package = Package();
