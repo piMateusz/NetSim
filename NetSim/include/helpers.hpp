@@ -4,5 +4,6 @@
 
 #ifndef NETSIM_HELPERS_HPP
 #define NETSIM_HELPERS_HPP
-// random numbers generator
+
+
 #endif //NETSIM_HELPERS_HPP

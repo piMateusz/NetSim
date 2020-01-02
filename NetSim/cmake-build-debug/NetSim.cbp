@@ -381,6 +381,14 @@
 		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/main.cpp">
 			<Option target="NetSim"/>
 		</Unit>
+		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/helpers.cpp">
+			<Option target="NetSim"/>
+			<Option target="NetSim_tests"/>
+		</Unit>
+		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.cpp">
+			<Option target="NetSim"/>
+			<Option target="NetSim_tests"/>
+		</Unit>
 		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/package.cpp">
 			<Option target="NetSim"/>
 			<Option target="NetSim_tests"/>
