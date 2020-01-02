@@ -18,7 +18,7 @@ Package& Package::operator=(Package&& package){
     return (*this);
 }
 
-Package::Package(Package &&package){
+Package::Package(Package &&package) noexcept {
     id_number = package.get_id();
     package.id_number = deleted_id;
 }

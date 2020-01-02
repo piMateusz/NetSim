@@ -16,7 +16,7 @@ class Package{
         elementID id_number = deleted_id;
     public:
         Package();
-        Package(Package &&package);
+        Package(Package &&package) noexcept ;
         Package& operator=(Package&& package);
         elementID get_id() const { return id_number;}
         ~Package();

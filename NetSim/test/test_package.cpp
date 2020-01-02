@@ -25,17 +25,25 @@ TEST(NetWork_package_test, new_produc_from_assignedID){
     EXPECT_EQ(package5.get_id(), 3);
 }
 
+TEST(NetWork_package_test, new_prod_from_move_constr){
+    Package package1 = Package();
+    Package package2 = Package();
+    Package package3 = Package(std::move(package2));
+
+    EXPECT_EQ(package3.get_id(), 2);
+    EXPECT_EQ(package2.get_id(), 0);
+}
+
 TEST(NetWork_package_test, equal_oparator_test){
     Package package1 = Package();
-    Package &package2 = package1;
-//    Package package3 = Package();         //uncomment if fixed above
-//    Package package4 = Package();
-//    package3 = package2;
-//    Package package5 = Package();
+    Package package2 = std::move(package1);
+    Package package3 = Package();
+    Package package4 = Package();
+    package3 = std::move(package2);
+    Package package5 = Package();
 
-    EXPECT_EQ(package2.get_id(), 1);
     EXPECT_EQ(package1.get_id(), 0);
-//    EXPECT_EQ(package3.get_id(), 1);
-//    EXPECT_EQ(package4.get_id(), 3);
-//    EXPECT_EQ(package5.get_id(), 2);
+    EXPECT_EQ(package3.get_id(), 1);
+    EXPECT_EQ(package4.get_id(), 3);
+    EXPECT_EQ(package5.get_id(), 2);
 }
