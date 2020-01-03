@@ -19,7 +19,15 @@ class IpackageReceiver{
 };
 
 class Storehouse: public IpackageReceiver{
-    Storehouse(elementID id, std::unique_ptr<IPackageStockpile>);
+    private:
+        elementID id_;
+        std::unique_ptr<IPackageStockpile> stockpile_queue_ptr;
+        ReceiverType receiver_type = ReceiverType::Storehouse;
+    public:
+        Storehouse(elementID id, std::unique_ptr<IPackageStockpile> stockpile_queue_ptr_): id_(id), stockpile_queue_ptr(stockpile_queue_ptr_) {};
+        virtual void receive_package(Package &&package) override ;      //TO DO
+        virtual elementID get_id() override { return id_;}
+        ReceiverType get_receiver_type() { return receiver_type;}
 };
 
 // zrobione ale czy dobrze ?
@@ -52,7 +60,7 @@ class PackageSender{
 
     public:
         ReceiverPreferences receiver_preferences_;
-        void send_package();        // faktyczne przekazanie odbywa się w etapie symulacji “Przekazanie półproduktów do odbiorców”,
+        void send_package();        //TO DO - faktyczne przekazanie odbywa się w etapie symulacji “Przekazanie półproduktów do odbiorców”,
         std::optional<Package> get_sending_buffer(){ return sending_buffer;}
 
     protected:
@@ -60,18 +68,34 @@ class PackageSender{
 };
 
 class Ramp: public PackageSender{
+    private:
+        elementID id_;
+        TimeOffset period_;
+        Time start_time_;
+        ReceiverType receiver_type = ReceiverType::Ramp;
     public:
-        Ramp(elementID id, TimeOffset period);
-        void deliver_goods(Time time);
-        TimeOffset get_delivery_interval();
-        elementID get_id();
+        Ramp(elementID id, TimeOffset period, Time start_time): id_(id), period_(period), start_time_(start_time) {};
+        void deliver_goods(Time time);      //TO DO
+        TimeOffset get_delivery_interval(){ return period_;}
+        elementID get_id() { return id_;};
+        ReceiverType get_receiver_type() { return receiver_type;}
 };
 
 class Worker: public IpackageReceiver, PackageSender{
+    private:
+        elementID id_;
+        std::unique_ptr<PackageQueue> package_queue_ptr_;
+        ReceiverType receiver_type = ReceiverType::Worker;
+        TimeOffset period_;
+        Time start_time_;
     public:
-        Worker(elementID id, TimeOffset period, std::unique_ptr<PackageQueue>);
-        void do_work(Time time);
-        TimeOffset get_processing_duration();
-        Time get_package_processing_start_time();
+        Worker(elementID id, TimeOffset period, Time start_time, std::unique_ptr<PackageQueue> package_queue_ptr):
+            id_(id), period_(period), start_time_(start_time), package_queue_ptr_(package_queue_ptr) {};
+        virtual void receive_package(Package &&package) override ;      //TO DO
+        virtual elementID get_id() override { return id_;}
+        ReceiverType get_receiver_type() { return receiver_type;}
+        void do_work(Time time);            //TO DO
+        TimeOffset get_processing_duration(){ return period_;}
+        Time get_package_processing_start_time(){ return start_time_;}
 };
 #endif //NETSIM_NODES_HPP

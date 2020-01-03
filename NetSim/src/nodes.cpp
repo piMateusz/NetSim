@@ -3,45 +3,15 @@
 //
 #include "nodes.hpp"
 
-//storehouse
-
-Storehouse::Storehouse(elementID id, std::unique_ptr<IPackageStockpile>){
-    ;
-}
-
 //worker
-
-Worker::Worker(elementID id, TimeOffset period, std::unique_ptr<PackageQueue>){
-    ;
-}
 
 void Worker::do_work(Time time){
     ;
 }
 
-TimeOffset Worker::get_processing_duration(){
-    ;
-}
-
-Time Worker::get_package_processing_start_time(){
-    ;
-}
-
 //ramp
 
-Ramp::Ramp(elementID id, TimeOffset period){
-    ;
-}
-
 void Ramp::deliver_goods(Time time){
-    ;
-}
-
-TimeOffset Ramp::get_delivery_interval(){
-    ;
-}
-
-elementID Ramp::get_id(){
     ;
 }
 
