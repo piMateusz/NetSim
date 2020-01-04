@@ -10,12 +10,14 @@
 #include <map>
 
 enum class ReceiverType{
-    Ramp, Worker, Storehouse
+    Worker, Storehouse
 };
 
 class IPackageReceiver{
-    virtual void receive_package(Package &&package) = 0;
-    virtual elementID get_id() = 0;
+    public:
+        virtual void receive_package(Package &&package) = 0;
+        virtual elementID get_id() = 0;
+        virtual ReceiverType get_receiver_type() = 0;
 };
 
 class Storehouse: public IPackageReceiver{
@@ -24,10 +26,10 @@ class Storehouse: public IPackageReceiver{
         std::unique_ptr<IPackageStockpile> stockpile_queue_ptr;
         ReceiverType receiver_type = ReceiverType::Storehouse;
     public:
-        Storehouse(elementID id, std::unique_ptr<IPackageStockpile> stockpile_queue_ptr_): id_(id), stockpile_queue_ptr(stockpile_queue_ptr_) {};
+        Storehouse(elementID id, std::unique_ptr<IPackageStockpile> stockpile_queue_ptr_): id_(id), stockpile_queue_ptr(std::move(stockpile_queue_ptr_)) {};
         virtual void receive_package(Package &&package) override ;      //TO DO
+        virtual ReceiverType get_receiver_type() override { return receiver_type;}
         virtual elementID get_id() override { return id_;}
-        ReceiverType get_receiver_type() { return receiver_type;}
 };
 
 // zrobione ale czy dobrze ?
@@ -57,28 +59,26 @@ class ReceiverPreferences{
 class PackageSender{
     private:
         std::optional<Package> sending_buffer = std::nullopt;
-
-    public:
         ReceiverPreferences receiver_preferences_;
+    public:
+        PackageSender(ReceiverPreferences receiver_preferences): receiver_preferences_(receiver_preferences) {}
         void send_package();        //TO DO - faktyczne przekazanie odbywa się w etapie symulacji “Przekazanie półproduktów do odbiorców”,
-        std::optional<Package> get_sending_buffer(){ return sending_buffer;}
+        std::optional<Package> get_sending_buffer(){ return std::move(*sending_buffer);}
 
     protected:
-        void push_package(Package &&package){sending_buffer.emplace(package);};
+        void push_package(Package &&package){sending_buffer.emplace(std::move(package));};
 };
 
 class Ramp: public PackageSender{
     private:
         elementID id_;
         TimeOffset period_;
-        Time start_time_;
-        ReceiverType receiver_type = ReceiverType::Ramp;
     public:
-        Ramp(elementID id, TimeOffset period, Time start_time): id_(id), period_(period), start_time_(start_time) {};
+        Ramp(elementID id, TimeOffset period, ReceiverPreferences receiver_preferences):
+            PackageSender(receiver_preferences), id_(id), period_(period){};
         void deliver_goods(Time time);      //TO DO
         TimeOffset get_delivery_interval(){ return period_;}
         elementID get_id() { return id_;};
-        ReceiverType get_receiver_type() { return receiver_type;}
 };
 
 class Worker: public IPackageReceiver, PackageSender{
@@ -89,12 +89,12 @@ class Worker: public IPackageReceiver, PackageSender{
         TimeOffset period_;
         Time start_time_;
     public:
-        Worker(elementID id, TimeOffset period, Time start_time, std::unique_ptr<PackageQueue> package_queue_ptr):
-            id_(id), period_(period), start_time_(start_time), package_queue_ptr_(package_queue_ptr) {};
+        Worker(elementID id, std::unique_ptr<PackageQueue> package_queue_ptr, ReceiverPreferences receiver_preferences, TimeOffset period, Time start_time):
+            PackageSender(receiver_preferences), id_(id), package_queue_ptr_(std::move(package_queue_ptr)), period_(period), start_time_(start_time){};
         virtual void receive_package(Package &&package) override ;      //TO DO
         virtual elementID get_id() override { return id_;}
-        ReceiverType get_receiver_type() { return receiver_type;}
         void do_work(Time time);            //TO DO
+        virtual ReceiverType get_receiver_type() override { return receiver_type;}
         TimeOffset get_processing_duration(){ return period_;}
         Time get_package_processing_start_time(){ return start_time_;}
 };

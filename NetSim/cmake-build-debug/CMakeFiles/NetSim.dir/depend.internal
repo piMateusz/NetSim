@@ -6,6 +6,15 @@ CMakeFiles/NetSim.dir/main.cpp.obj
  ../include/storage_types.hpp
  ../include/types.hpp
  C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/main.cpp
+CMakeFiles/NetSim.dir/src/helpers.cpp.obj
+ ../include/helpers.hpp
+ C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/helpers.cpp
+CMakeFiles/NetSim.dir/src/nodes.cpp.obj
+ ../include/nodes.hpp
+ ../include/package.hpp
+ ../include/storage_types.hpp
+ ../include/types.hpp
+ C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.cpp
 CMakeFiles/NetSim.dir/src/package.cpp.obj
  ../include/package.hpp
  ../include/types.hpp

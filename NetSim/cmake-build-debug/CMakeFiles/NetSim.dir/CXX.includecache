@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../include/nodes.hpp
+storage_types.hpp
+../include/storage_types.hpp
+memory
+-
+map
+-
+
 ../include/package.hpp
 types.hpp
 ../include/types.hpp
@@ -21,10 +29,10 @@ list
 -
 
 ../include/types.hpp
+functional
+../include/functional
 
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/main.cpp
-iostream
--
-storage_types.hpp
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/storage_types.hpp
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.cpp
+nodes.hpp
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.hpp
 
