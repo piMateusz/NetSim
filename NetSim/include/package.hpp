@@ -10,15 +10,15 @@
 
 class Package{
     private:
+        static const elementID deleted_id = 0;
         static std::set<elementID> assigned_IDs;
         static std::set<elementID> freed_IDs;
-        //const ??
-        elementID id_number;
+        elementID id_number = deleted_id;
     public:
         Package();
-        Package(Package &&package);
+        Package(Package &&package) noexcept ;
         Package& operator=(Package&& package);
         elementID get_id() const { return id_number;}
-        ~Package(){freed_IDs.insert(id_number);};
+        ~Package();
 };
 #endif //NETSIM_PACKAGE_HPP

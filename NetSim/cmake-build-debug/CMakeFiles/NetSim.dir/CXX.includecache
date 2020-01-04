@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/nodes.hpp
+storage_types.hpp
+../include/storage_types.hpp
+memory
+-
+map
+-
+
+../include/package.hpp
+types.hpp
+../include/types.hpp
+set
+-
+
+../include/storage_types.hpp
+package.hpp
+../include/package.hpp
+types.hpp
+../include/types.hpp
+list
+-
+
+../include/types.hpp
+functional
+../include/functional
+
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.cpp
+nodes.hpp
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.hpp
+

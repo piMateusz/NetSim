@@ -30,8 +30,8 @@ class IPackageQueue: public IPackageStockpile{
 
 class PackageQueue: public IPackageQueue{
 private:
-    std::list<Package> products;
     PackageQueueType queue_type;
+    std::list<Package> products;
 public:
     using package_list_it = std::list<Package>::const_iterator;
     package_list_it cbegin() const { return products.cbegin(); }

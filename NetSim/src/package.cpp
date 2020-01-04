@@ -3,36 +3,33 @@
 //
 
 #include "package.hpp"
+//Initializing static sets
 
-//Initializing empty sets
-
-std::set<elementID> Package::assigned_IDs;
+std::set<elementID> Package::assigned_IDs = {0};
 std::set<elementID> Package::freed_IDs;
 
 Package& Package::operator=(Package&& package){
-    id_number = std::move(package.get_id());
-    package.id_number = 0;
+    if (id_number != deleted_id) {
+        freed_IDs.insert(id_number);
+        assigned_IDs.erase(id_number);
+    }
+    id_number = package.get_id();
+    package.id_number = deleted_id;
     return (*this);
 }
 
-Package::Package(Package &&package){
-    id_number = std::move(package.get_id());
-    package.id_number = 0;
+Package::Package(Package &&package) noexcept {
+    id_number = package.get_id();
+    package.id_number = deleted_id;
 }
 
 Package::Package(){
     if (freed_IDs.empty()) {
-        if (assigned_IDs.empty()){
-            id_number = 1;
-            assigned_IDs.insert(1);
+        auto it = assigned_IDs.end();
+        it--;
+        id_number = *it + 1;
+        assigned_IDs.insert(id_number);
         }
-        else{
-            auto it = assigned_IDs.end();
-            it--;
-            id_number = *it + 1;
-            assigned_IDs.insert(*it + 1);
-        }
-    }
     else{
         auto value = *freed_IDs.begin();
         freed_IDs.erase(value);
@@ -40,4 +37,14 @@ Package::Package(){
     }
 }
 
+Package::~Package(){
+    if(id_number != deleted_id){
+        if (freed_IDs.find(id_number) == freed_IDs.end()){
+            freed_IDs.insert(id_number);
+        }
+        if (assigned_IDs.find(id_number) != assigned_IDs.end()){
+            assigned_IDs.erase(id_number);
+        }
+    }
+}
 

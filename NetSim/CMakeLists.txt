@@ -12,6 +12,8 @@ include_directories(
 set(SOURCE_FILES
         src/package.cpp
         src/storage_types.cpp
+        src/nodes.cpp
+        src/helpers.cpp
         )
 
 add_executable(NetSim ${SOURCE_FILES} main.cpp)
@@ -20,6 +22,7 @@ add_executable(NetSim ${SOURCE_FILES} main.cpp)
 
 set(SOURCES_FILES_TESTS
         test/test_package.cpp
+        test/test_storage_types.cpp
         )
 
 add_executable(NetSim_tests ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)
