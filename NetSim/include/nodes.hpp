@@ -13,12 +13,12 @@ enum class ReceiverType{
     Ramp, Worker, Storehouse
 };
 
-class IpackageReceiver{
+class IPackageReceiver{
     virtual void receive_package(Package &&package) = 0;
     virtual elementID get_id() = 0;
 };
 
-class Storehouse: public IpackageReceiver{
+class Storehouse: public IPackageReceiver{
     private:
         elementID id_;
         std::unique_ptr<IPackageStockpile> stockpile_queue_ptr;
@@ -46,10 +46,10 @@ class ReceiverPreferences{
         const_iterator begin() const { return preferences_map.cbegin(); }
         const_iterator end() const { return preferences_map.cend(); }
 
-        void add_receiver(IpackageReceiver* receiver_ptr, ProbabilityGenerator random_function);
-        void remove_receiver(IpackageReceiver* receiver_prt);
-        IpackageReceiver* choose_receiver();
-        ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IpackageReceiver*> receivers_vector);
+        void add_receiver(IPackageReceiver* receiver_ptr, ProbabilityGenerator random_function);
+        void remove_receiver(IPackageReceiver* receiver_prt);
+        IPackageReceiver* choose_receiver();
+        ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector);
 };
 
 // prawie skonczone
@@ -81,7 +81,7 @@ class Ramp: public PackageSender{
         ReceiverType get_receiver_type() { return receiver_type;}
 };
 
-class Worker: public IpackageReceiver, PackageSender{
+class Worker: public IPackageReceiver, PackageSender{
     private:
         elementID id_;
         std::unique_ptr<PackageQueue> package_queue_ptr_;
