@@ -7,6 +7,7 @@
 
 #include "package.hpp"
 #include "types.hpp"
+#include <crtdbg.h>
 #include <list>
 
 enum class PackageQueueType{

@@ -10,6 +10,27 @@ void PackageSender::send_package(){
     receiver_ptr->receive_package(*get_sending_buffer());
 }
 
+void Storehouse::receive_package(Package &&package) {
+    ;
+}
+
+void Ramp::deliver_goods(Time time) {
+    ;
+}
+
+// Worker
+
+void Worker::do_work(Time time){
+    int start = get_package_processing_start_time();
+    int pd = get_processing_duration();
+    if (time - pd == start){
+        send_package();
+        get_sending_buffer().reset();
+    }
+}
+void Worker::receive_package(Package &&package){
+    push_package(std::move(package));
+}
 //ReceiverPreferences
 
 void ReceiverPreferences::add_receiver(IPackageReceiver* receiver_ptr, ProbabilityGenerator random_function){

@@ -376,18 +376,18 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Google Test.All in test_package.cpp" />
-      <item itemvalue="Google Test.All in test_storage_types.cpp" />
-      <item itemvalue="Google Test.NetSim_tests" />
-      <item itemvalue="Google Test.NetWork_storage_types_test.empty" />
-      <item itemvalue="Google Test.NetWork_storage_types_test.fifo_pop" />
-      <item itemvalue="Google Test.NetWork_storage_types_test.size" />
-      <item itemvalue="CMake Application.NetSim" />
       <item itemvalue="CMake Application.NetSim_tests" />
+      <item itemvalue="CMake Application.NetSim" />
       <item itemvalue="CMake Application.gmock" />
       <item itemvalue="CMake Application.gmock_main" />
       <item itemvalue="CMake Application.gtest" />
       <item itemvalue="CMake Application.gtest_main" />
+      <item itemvalue="Google Test.NetSim_tests" />
+      <item itemvalue="Google Test.All in test_storage_types.cpp" />
+      <item itemvalue="Google Test.NetWork_storage_types_test.size" />
+      <item itemvalue="Google Test.NetWork_storage_types_test.empty" />
+      <item itemvalue="Google Test.All in test_package.cpp" />
+      <item itemvalue="Google Test.NetWork_storage_types_test.fifo_pop" />
     </list>
     <recent_temporary>
       <list>
