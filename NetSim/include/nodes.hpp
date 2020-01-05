@@ -65,9 +65,8 @@ class ReceiverPreferences{
 
 
 class PackageSender{
-    private:
-        std::optional<Package> sending_buffer = std::nullopt;
     public:
+        std::optional<Package> sending_buffer = std::nullopt;
         ReceiverPreferences receiver_preferences_;
         PackageSender(ReceiverPreferences receiver_preferences): receiver_preferences_(receiver_preferences) {}
         void send_package();
