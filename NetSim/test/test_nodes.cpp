@@ -80,4 +80,80 @@ TEST(NetWork_receiver_preferences_test, probability_scaling) {
     EXPECT_EQ(worker_preferences.preferences_map[receiver_ptr_worker2],0.2);
     EXPECT_EQ(worker_preferences.preferences_map[receiver_ptr_worker3],0.4);
 }
+TEST(NetWork_ramp_test,is_corectly_tour){
+//dostawa: czy dostawa odbywa się we właściwej turze? czy półprodukt trafia od razu do bufora?
+    ProbabilityGenerator function = probability_generator_1;
+
+//storehouse
+    PackageQueueType queueType_lifo_storehouse = PackageQueueType::LIFO;
+    std::unique_ptr<PackageQueue> storehouse_queue_ptr = std::make_unique<PackageQueue>(queueType_lifo_storehouse);
+    Storehouse storehouse1 = Storehouse(1, std::move(storehouse_queue_ptr));
+
+//worker
+    PackageQueueType queueType_lifo = PackageQueueType::LIFO;
+    std::unique_ptr<PackageQueue> package_queue_ptr = std::make_unique<PackageQueue>(queueType_lifo);
+    ReceiverPreferences worker_preferences = ReceiverPreferences(function);
+    IPackageReceiver* receiver_ptr_worker = &storehouse1;
+    worker_preferences.add_receiver(receiver_ptr_worker);
+    Worker worker1 = Worker(1, std::move(package_queue_ptr), worker_preferences, 2);
+
+//ramp
+    ReceiverPreferences ramp_preferences = ReceiverPreferences(function);
+    IPackageReceiver* receiver_ptr = &worker1;
+    ramp_preferences.add_receiver(receiver_ptr);
+    Ramp ramp1 = Ramp(1, 2, ramp_preferences);
+
+    ramp1.deliver_goods(2);
+    EXPECT_EQ(worker1.get_sending_buffer().has_value(), true);
+    ramp1.deliver_goods(1);
+    EXPECT_EQ(worker1.get_sending_buffer().has_value(), std::nullopt);
+}
+TEST(NetWork_worker_test,is_corectly_Queue_insert){
+    ProbabilityGenerator function = probability_generator_1;
+
+//storehouse
+    PackageQueueType queueType_lifo_storehouse = PackageQueueType::LIFO;
+    std::unique_ptr<PackageQueue> storehouse_queue_ptr = std::make_unique<PackageQueue>(queueType_lifo_storehouse);
+    Storehouse storehouse1 = Storehouse(1, std::move(storehouse_queue_ptr));
+
+//worker
+    PackageQueueType queueType_lifo = PackageQueueType::LIFO;
+    std::unique_ptr<PackageQueue> package_queue_ptr = std::make_unique<PackageQueue>(queueType_lifo);
+    ReceiverPreferences worker_preferences = ReceiverPreferences(function);
+    IPackageReceiver* receiver_ptr_worker = &storehouse1;
+    worker_preferences.add_receiver(receiver_ptr_worker);
+    Worker worker1 = Worker(1, std::move(package_queue_ptr), worker_preferences, 2);
+
+//ramp
+    ReceiverPreferences ramp_preferences = ReceiverPreferences(function);
+    IPackageReceiver* receiver_ptr = &worker1;
+    ramp_preferences.add_receiver(receiver_ptr);
+    Ramp ramp1 = Ramp(1, 1, ramp_preferences);
+    ramp1.deliver_goods(1);
+    worker1.do_work(2);
+    EXPECT_EQ(worker1.get_processing_duration(), 2);
+}
+TEST(NetWork_Storehause_test,is_correct_insert_to_storehause){
+    ProbabilityGenerator function = probability_generator_1;
+
+//storehouse
+    PackageQueueType queueType_lifo_storehouse = PackageQueueType::LIFO;
+    std::unique_ptr<PackageQueue> storehouse_queue_ptr = std::make_unique<PackageQueue>(queueType_lifo_storehouse);
+    Storehouse storehouse1 = Storehouse(1, std::move(storehouse_queue_ptr));
+
+//worker
+    PackageQueueType queueType_lifo = PackageQueueType::LIFO;
+    std::unique_ptr<PackageQueue> package_queue_ptr = std::make_unique<PackageQueue>(queueType_lifo);
+    ReceiverPreferences worker_preferences = ReceiverPreferences(function);
+    IPackageReceiver* receiver_ptr_worker = &storehouse1;
+    worker_preferences.add_receiver(receiver_ptr_worker);
+    Worker worker1 = Worker(1, std::move(package_queue_ptr), worker_preferences, 2);
+
+//ramp
+    ReceiverPreferences ramp_preferences = ReceiverPreferences(function);
+    IPackageReceiver* receiver_ptr = &worker1;
+    ramp_preferences.add_receiver(receiver_ptr);
+    Ramp ramp1 = Ramp(1, 1, ramp_preferences);
+    ramp1.deliver_goods(1);
+}
 
