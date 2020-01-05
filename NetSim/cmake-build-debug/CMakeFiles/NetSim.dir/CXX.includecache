@@ -25,6 +25,8 @@ package.hpp
 ../include/package.hpp
 types.hpp
 ../include/types.hpp
+crtdbg.h
+-
 list
 -
 
@@ -32,7 +34,17 @@ list
 functional
 ../include/functional
 
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/main.cpp
+iostream
+-
+storage_types.hpp
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/storage_types.hpp
+
 C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.cpp
 nodes.hpp
 C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.hpp
+
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/storage_types.cpp
+storage_types.hpp
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/storage_types.hpp
 

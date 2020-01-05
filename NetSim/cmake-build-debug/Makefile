@@ -407,6 +407,33 @@ test/main_gtest.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.s
 .PHONY : test/main_gtest.cpp.s
 
+test/test_nodes.obj: test/test_nodes.cpp.obj
+
+.PHONY : test/test_nodes.obj
+
+# target to build an object file
+test/test_nodes.cpp.obj:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj
+.PHONY : test/test_nodes.cpp.obj
+
+test/test_nodes.i: test/test_nodes.cpp.i
+
+.PHONY : test/test_nodes.i
+
+# target to preprocess a source file
+test/test_nodes.cpp.i:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.i
+.PHONY : test/test_nodes.cpp.i
+
+test/test_nodes.s: test/test_nodes.cpp.s
+
+.PHONY : test/test_nodes.s
+
+# target to generate assembly for a file
+test/test_nodes.cpp.s:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.s
+.PHONY : test/test_nodes.cpp.s
+
 test/test_package.obj: test/test_package.cpp.obj
 
 .PHONY : test/test_package.obj
@@ -497,6 +524,9 @@ help:
 	@echo ... test/main_gtest.obj
 	@echo ... test/main_gtest.i
 	@echo ... test/main_gtest.s
+	@echo ... test/test_nodes.obj
+	@echo ... test/test_nodes.i
+	@echo ... test/test_nodes.s
 	@echo ... test/test_package.obj
 	@echo ... test/test_package.i
 	@echo ... test/test_package.s

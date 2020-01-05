@@ -69,8 +69,10 @@ void ReceiverPreferences::remove_receiver(IPackageReceiver* receiver_ptr){
 
 IPackageReceiver* ReceiverPreferences::choose_receiver(){
     double random_probability = random_function_();
+    double sum = 0;
     for (const auto &pair : preferences_map){
-        if (pair.second >= random_probability)
+        sum += pair.second;
+        if (sum >= random_probability)
             return pair.first;
     }
     return nullptr;

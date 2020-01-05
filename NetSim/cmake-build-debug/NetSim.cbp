@@ -400,6 +400,9 @@
 		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/main_gtest.cpp">
 			<Option target="NetSim_tests"/>
 		</Unit>
+		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_nodes.cpp">
+			<Option target="NetSim_tests"/>
+		</Unit>
 		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_package.cpp">
 			<Option target="NetSim_tests"/>
 		</Unit>

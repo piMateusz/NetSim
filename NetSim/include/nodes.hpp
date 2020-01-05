@@ -14,15 +14,15 @@ enum class ReceiverType{
 };
 
 class IPackageReceiver{
-    using const_package_it = std::list<Package>::const_iterator;
     public:
+        using const_package_it = std::list<Package>::const_iterator;
         virtual void receive_package(Package &&package) = 0;
         virtual elementID get_id() = 0;
         virtual ReceiverType get_receiver_type() = 0;
-/*        virtual const_package_it cbegin() const = 0;
+        virtual const_package_it cbegin() const = 0;
         virtual const_package_it cend() const = 0;
         virtual const_package_it begin() const = 0;
-        virtual const_package_it end() const = 0;*/
+        virtual const_package_it end() const = 0;
 };
 
 class Storehouse: public IPackageReceiver{
@@ -35,10 +35,10 @@ class Storehouse: public IPackageReceiver{
         virtual void receive_package(Package &&package) override;      //TO DO
         virtual ReceiverType get_receiver_type() override { return receiver_type;}
         virtual elementID get_id() override { return id_;}
-/*      virtual const_package_it cbegin() const override { return stockpile_queue_ptr->};
-        virtual const_package_it cend() const override;
-        virtual const_package_it begin() const override ;
-        virtual const_package_it end() const override ;*/
+        virtual const_package_it cbegin() const override { return stockpile_queue_ptr->cbegin();}
+        virtual const_package_it cend() const override { return stockpile_queue_ptr->cend();}
+        virtual const_package_it begin() const override { return stockpile_queue_ptr->begin();}
+        virtual const_package_it end() const override { return stockpile_queue_ptr->end();}
 };
 
 
@@ -104,5 +104,9 @@ class Worker: public IPackageReceiver, PackageSender{
         virtual ReceiverType get_receiver_type() override { return receiver_type;}
         TimeOffset get_processing_duration(){ return period_;}
         Time get_package_processing_start_time(){ return start_time_;}
+        virtual const_package_it cbegin() const override { return package_queue_ptr_->cbegin();}
+        virtual const_package_it cend() const override { return package_queue_ptr_->cend();}
+        virtual const_package_it begin() const override { return package_queue_ptr_->begin();}
+        virtual const_package_it end() const override { return package_queue_ptr_->end();}
 };
 #endif //NETSIM_NODES_HPP

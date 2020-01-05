@@ -16,10 +16,15 @@ enum class PackageQueueType{
 
 class IPackageStockpile{
     public:
+        using package_list_it = std::list<Package>::const_iterator;
         virtual bool empty() const= 0;
         virtual void push(Package &package) = 0;
         virtual std::size_t size() const = 0;
         virtual ~IPackageStockpile(){}
+        virtual package_list_it cbegin() const = 0;
+        virtual package_list_it cend() const = 0;
+        virtual package_list_it begin() const = 0;
+        virtual package_list_it end() const = 0;
 };
 
 class IPackageQueue: public IPackageStockpile{
@@ -34,11 +39,10 @@ private:
     PackageQueueType queue_type;
     std::list<Package> products;
 public:
-    using package_list_it = std::list<Package>::const_iterator;
-    package_list_it cbegin() const { return products.cbegin(); }
-    package_list_it cend() const { return products.cend(); }
-    package_list_it begin() const { return products.cbegin(); }
-    package_list_it end() const { return products.cend(); }
+    virtual package_list_it cbegin() const override { return products.cbegin(); }
+    virtual package_list_it cend() const override { return products.cend(); }
+    virtual package_list_it begin() const override { return products.cbegin(); }
+    virtual package_list_it end() const override { return products.cend(); }
     PackageQueue(const PackageQueueType& queueType): queue_type(queueType){};
     virtual Package&& pop() override ;
     virtual PackageQueueType get_queue_type()const override{ return queue_type;}
