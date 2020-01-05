@@ -18,7 +18,6 @@
   <component name="ChangeListManager">
     <list default="true" id="688f69f4-430a-4547-9928-2008985619ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/nodes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/nodes.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nodes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/nodes.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../googletest-master/.clang-format" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../googletest-master/.gitignore" beforeDir="false" />
@@ -449,7 +448,7 @@
       <workItem from="1578091428259" duration="3251000" />
       <workItem from="1578162034256" duration="160000" />
       <workItem from="1578162524186" duration="10700000" />
-      <workItem from="1578223166008" duration="2163000" />
+      <workItem from="1578223166008" duration="5015000" />
     </task>
     <servers />
   </component>

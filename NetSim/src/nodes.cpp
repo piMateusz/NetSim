@@ -8,10 +8,13 @@
 void PackageSender::send_package(){
     IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
     receiver_ptr->receive_package(*get_sending_buffer());
+    get_sending_buffer().reset();
 }
 
+//Storehouse
+
 void Storehouse::receive_package(Package &&package) {
-    ;
+    stockpile_queue_ptr->push(package);
 }
 
 void Ramp::deliver_goods(Time time) {
@@ -21,16 +24,21 @@ void Ramp::deliver_goods(Time time) {
 // Worker
 
 void Worker::do_work(Time time){
-    int start = get_package_processing_start_time();
-    int pd = get_processing_duration();
+    Time start = get_package_processing_start_time();
+    TimeOffset pd = get_processing_duration();
     if (time - pd == start){
         send_package();
-        get_sending_buffer().reset();
     }
 }
 void Worker::receive_package(Package &&package){
-    push_package(std::move(package));
+    if (get_sending_buffer()){
+        push_package(std::move(package));
+    }
+    else{
+        package_queue_ptr_->push(package);
+    }
 }
+
 //ReceiverPreferences
 
 void ReceiverPreferences::add_receiver(IPackageReceiver* receiver_ptr, ProbabilityGenerator random_function){
