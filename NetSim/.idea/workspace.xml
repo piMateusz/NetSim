@@ -18,27 +18,10 @@
   <component name="ChangeListManager">
     <list default="true" id="688f69f4-430a-4547-9928-2008985619ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/nodes.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/nodes.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/storage_types.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/storage_types.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/nodes.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/nodes.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/storage_types.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/storage_types.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/NetSim.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/NetSim.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/NetSim_tests.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/NetSim_tests.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/nodes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/nodes.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/package.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/package.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/storage_types.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/storage_types.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/nodes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/nodes.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_nodes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_nodes.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_package.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_package.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test_storage_types.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_storage_types.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../googletest-master/.clang-format" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../googletest-master/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../googletest-master/.travis.yml" beforeDir="false" />
@@ -327,7 +310,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../semestr 1/WDI, informatyka 1/C_Lion/mdig-agh-air_inf1_lab_cpp_exercises-ee7e1e282284/solutions/matlab-8" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
-  <component name="RunManager" selected="Google Test.All in test_storage_types.cpp">
+  <component name="RunManager" selected="Google Test.All in test_nodes.cpp">
     <configuration name="All in test_nodes.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/test_nodes.cpp)" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -410,9 +393,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.All in test_nodes.cpp" />
         <item itemvalue="Google Test.All in test_storage_types.cpp" />
         <item itemvalue="Google Test.All in test_package.cpp" />
-        <item itemvalue="Google Test.All in test_nodes.cpp" />
         <item itemvalue="Google Test.NetWork_storage_types_test.fifo_pop" />
         <item itemvalue="Google Test.NetWork_storage_types_test.lifo_pop" />
       </list>
@@ -469,7 +452,8 @@
       <workItem from="1578162034256" duration="160000" />
       <workItem from="1578162524186" duration="10700000" />
       <workItem from="1578223166008" duration="21851000" />
-      <workItem from="1578251020126" duration="10690000" />
+      <workItem from="1578251020126" duration="11185000" />
+      <workItem from="1578263737286" duration="53000" />
     </task>
     <servers />
   </component>
@@ -510,46 +494,46 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577985047352" />
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom" timestamp="1578263252688">
+    <state width="1493" height="141" key="GridCell.Tab.0.bottom" timestamp="1578263789956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578263252688" />
-    <state width="1493" height="178" key="GridCell.Tab.0.center" timestamp="1578263252688">
+    <state width="1493" height="141" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578263789956" />
+    <state width="1493" height="141" key="GridCell.Tab.0.center" timestamp="1578263789956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578263252688" />
-    <state width="1493" height="178" key="GridCell.Tab.0.left" timestamp="1578263252687">
+    <state width="1493" height="141" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578263789956" />
+    <state width="1493" height="141" key="GridCell.Tab.0.left" timestamp="1578263789956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578263252687" />
-    <state width="1493" height="178" key="GridCell.Tab.0.right" timestamp="1578263252688">
+    <state width="1493" height="141" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578263789956" />
+    <state width="1493" height="141" key="GridCell.Tab.0.right" timestamp="1578263789956">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="178" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578263252688" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1578261386534">
+    <state width="1493" height="141" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578263789956" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1578263649452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578261386534" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1578261386534">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578263649452" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1578263649452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578261386534" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1578261386534">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1578263649452" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1578263649452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578261386534" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1578261386534">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1578263649452" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1578263649452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578261386534" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1578263649452" />
     <state x="277" y="54" key="SettingsEditor" timestamp="1578173341177">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578173341177" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1578251070998">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1578263738307">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1578251070998" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1578263738307" />
     <state x="41" y="190" key="run.anything.popup" timestamp="1578241918141">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

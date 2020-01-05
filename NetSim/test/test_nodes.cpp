@@ -81,7 +81,7 @@ TEST(NetWork_receiver_preferences_test, probability_scaling) {
     EXPECT_EQ(worker_preferences.preferences_map[receiver_ptr_worker2],0.2);
     EXPECT_EQ(worker_preferences.preferences_map[receiver_ptr_worker3],0.4);
 }
-TEST(NetWork_ramp_test,is_corectly_tour){
+/*TEST(NetWork_ramp_test,is_corectly_tour){
 //dostawa: czy dostawa odbywa się we właściwej turze? czy półprodukt trafia od razu do bufora?
     ProbabilityGenerator function = probability_generator_1;
 
@@ -156,5 +156,5 @@ TEST(NetWork_Storehause_test,is_correct_insert_to_storehause){
     ramp_preferences.add_receiver(receiver_ptr);
     Ramp ramp1 = Ramp(1, 1, ramp_preferences);
     ramp1.deliver_goods(1);
-}
+}*/
 
