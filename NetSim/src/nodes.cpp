@@ -27,10 +27,10 @@ void Ramp::deliver_goods(Time time) {
 // Worker
 
 void Worker::do_work(Time time){
-    Time start = get_package_processing_start_time();
     TimeOffset pd = get_processing_duration();
-    if (time - pd == start){
+    if ((time - 1) % pd == 0 ){
         send_package();
+        get_sending_buffer().reset();
     }
 }
 void Worker::receive_package(Package &&package){
