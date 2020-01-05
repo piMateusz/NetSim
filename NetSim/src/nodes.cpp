@@ -34,12 +34,17 @@ void ReceiverPreferences::remove_receiver(IPackageReceiver* receiver_ptr){
     }
 }
 
-//IPackageReceiver* ReceiverPreferences::choose_receiver(){
-//    for (const auto &pair : preferences_map)
-//        return pair.first;
-//}
+IPackageReceiver* ReceiverPreferences::choose_receiver(){
+    double random_probability = random_function_();
+    for (const auto &pair : preferences_map){
+        if (pair.second >= random_probability)
+            return pair.first;
+    }
+    return nullptr;
+}
 
 ReceiverPreferences::ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector){
+    random_function_ = random_function;
     double probability_sum = 0;
     for (const auto &receiver : receivers_vector) {
         if (receiver == *(receivers_vector.end() - 1))
