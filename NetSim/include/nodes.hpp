@@ -56,7 +56,7 @@ class ReceiverPreferences{
         const_iterator begin() const { return preferences_map.cbegin(); }
         const_iterator end() const { return preferences_map.cend(); }
 
-        void add_receiver(IPackageReceiver* receiver_ptr, ProbabilityGenerator random_function);
+        void add_receiver(IPackageReceiver* receiver_ptr);
         void remove_receiver(IPackageReceiver* receiver_prt);
         IPackageReceiver* choose_receiver();
         ReceiverPreferences(ProbabilityGenerator random_function): preferences_map({}), random_function_(random_function){}
@@ -67,8 +67,8 @@ class ReceiverPreferences{
 class PackageSender{
     private:
         std::optional<Package> sending_buffer = std::nullopt;
-        ReceiverPreferences receiver_preferences_;
     public:
+        ReceiverPreferences receiver_preferences_;
         PackageSender(ReceiverPreferences receiver_preferences): receiver_preferences_(receiver_preferences) {}
         void send_package();
         std::optional<Package> get_sending_buffer(){ return std::move(*sending_buffer);}
@@ -88,19 +88,19 @@ class Ramp: public PackageSender{
         elementID get_id() { return id_;};
 };
 
-class Worker: public IPackageReceiver, PackageSender{
+class Worker: public IPackageReceiver, public PackageSender{
     private:
         elementID id_;
         std::unique_ptr<PackageQueue> package_queue_ptr_;
         ReceiverType receiver_type = ReceiverType::Worker;
         TimeOffset period_;
-        Time start_time_;
+        Time start_time_ = 0;
     public:
-        Worker(elementID id, std::unique_ptr<PackageQueue> package_queue_ptr, ReceiverPreferences receiver_preferences, TimeOffset period, Time start_time):
-            PackageSender(receiver_preferences), id_(id), package_queue_ptr_(std::move(package_queue_ptr)), period_(period), start_time_(start_time){};
+        Worker(elementID id, std::unique_ptr<PackageQueue> package_queue_ptr, ReceiverPreferences receiver_preferences, TimeOffset period):
+            PackageSender(receiver_preferences), id_(id), package_queue_ptr_(std::move(package_queue_ptr)), period_(period){};
         virtual void receive_package(Package &&package) override;      //TO DO
         virtual elementID get_id() override { return id_;}
-        void do_work(Time time);            //TO DO
+        void do_work(Time time);
         virtual ReceiverType get_receiver_type() override { return receiver_type;}
         TimeOffset get_processing_duration(){ return period_;}
         Time get_package_processing_start_time(){ return start_time_;}

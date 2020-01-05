@@ -20,7 +20,8 @@ void Storehouse::receive_package(Package &&package) {
 void Ramp::deliver_goods(Time time) {
     if ( (time-1) % get_delivery_interval() == 0){
         auto package = Package();
-        send_package();
+        IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
+        receiver_ptr->receive_package(std::move(package));
     }
 }
 
@@ -35,17 +36,17 @@ void Worker::do_work(Time time){
 }
 void Worker::receive_package(Package &&package){
     if (get_sending_buffer()){
-        push_package(std::move(package));
+        package_queue_ptr_->push(package);
     }
     else{
-        package_queue_ptr_->push(package);
+        push_package(std::move(package));
     }
 }
 
 //ReceiverPreferences
 
-void ReceiverPreferences::add_receiver(IPackageReceiver* receiver_ptr, ProbabilityGenerator random_function){
-    double added_receiver_probability = random_function();
+void ReceiverPreferences::add_receiver(IPackageReceiver* receiver_ptr){
+    double added_receiver_probability = random_function_();
     double scaled_probability = added_receiver_probability/preferences_map.size();
     for(auto pair : preferences_map){
         pair.second -= scaled_probability;

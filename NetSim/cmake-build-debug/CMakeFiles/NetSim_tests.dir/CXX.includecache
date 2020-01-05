@@ -300,6 +300,20 @@ cxxabi.h
 acxx_demangle.h
 -
 
+../include/helpers.hpp
+iostream
+-
+random
+-
+
+../include/nodes.hpp
+storage_types.hpp
+../include/storage_types.hpp
+memory
+-
+map
+-
+
 ../include/package.hpp
 types.hpp
 ../include/types.hpp
@@ -311,30 +325,20 @@ package.hpp
 ../include/package.hpp
 types.hpp
 ../include/types.hpp
+crtdbg.h
+-
 list
 -
 
 ../include/types.hpp
+functional
+../include/functional
 
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/package.cpp
-package.hpp
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/package.hpp
-
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/storage_types.cpp
-storage_types.hpp
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/storage_types.hpp
-
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_package.cpp
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_nodes.cpp
 gtest/gtest.h
 C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/gtest/gtest.h
-storage_types.hpp
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/storage_types.hpp
-
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_storage_types.cpp
-gtest/gtest.h
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/gtest/gtest.h
-storage_types.hpp
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/storage_types.hpp
-package.hpp
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/package.hpp
+nodes.hpp
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/nodes.hpp
+helpers.hpp
+C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/helpers.hpp
 
