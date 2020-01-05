@@ -20,22 +20,21 @@ void Storehouse::receive_package(Package &&package) {
 void Ramp::deliver_goods(Time time) {
     if ( (time-1) % get_delivery_interval() == 0){
         auto package = Package();
-        if(get_sending_buffer()){
-            IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
-            receiver_ptr->receive_package(std::move(package));
-        }
-        else{
-            push_package(std::move(package));
-        }
-
+        push_package(std::move(package));
+        send_package();
     }
 }
 
 // Worker
 
 void Worker::do_work(Time time){
+    if (!get_sending_buffer()){
+        if(!package_queue_ptr_->empty()){
+            push_package(package_queue_ptr_->pop());
+        }
+    }
     TimeOffset pd = get_processing_duration();
-    if ((time - 1) % pd == 0 ){
+    if ((time - 1) % pd == 0 ) {
         send_package();
         get_sending_buffer().reset();
     }
