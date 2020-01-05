@@ -63,7 +63,6 @@ class ReceiverPreferences{
         ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector);
 };
 
-// prawie skonczone
 
 class PackageSender{
     private:
@@ -71,9 +70,8 @@ class PackageSender{
         ReceiverPreferences receiver_preferences_;
     public:
         PackageSender(ReceiverPreferences receiver_preferences): receiver_preferences_(receiver_preferences) {}
-        void send_package();        //TO DO - faktyczne przekazanie odbywa się w etapie symulacji “Przekazanie półproduktów do odbiorców”,
+        void send_package();
         std::optional<Package> get_sending_buffer(){ return std::move(*sending_buffer);}
-
     protected:
         void push_package(Package &&package){sending_buffer.emplace(std::move(package));};
 };

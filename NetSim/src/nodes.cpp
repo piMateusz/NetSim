@@ -6,7 +6,8 @@
 //PackageSender
 
 void PackageSender::send_package(){
-    ;
+    IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
+    receiver_ptr->receive_package(*get_sending_buffer());
 }
 
 //ReceiverPreferences
