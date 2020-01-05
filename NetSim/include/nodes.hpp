@@ -48,9 +48,9 @@ class ReceiverPreferences{
     using iterator = preferences_t::iterator;
 
     private:
-        preferences_t preferences_map;
         ProbabilityGenerator random_function_;
     public:
+        preferences_t preferences_map;
         const_iterator cbegin() const { return preferences_map.cbegin(); }
         const_iterator cend() const { return preferences_map.cend(); }
         const_iterator begin() const { return preferences_map.cbegin(); }
@@ -59,7 +59,7 @@ class ReceiverPreferences{
         void add_receiver(IPackageReceiver* receiver_ptr);
         void remove_receiver(IPackageReceiver* receiver_prt);
         IPackageReceiver* choose_receiver();
-        ReceiverPreferences(ProbabilityGenerator random_function): preferences_map({}), random_function_(random_function){}
+        ReceiverPreferences(ProbabilityGenerator random_function): random_function_(random_function), preferences_map({}){}
         ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector);
 };
 
@@ -71,7 +71,7 @@ class PackageSender{
         ReceiverPreferences receiver_preferences_;
         PackageSender(ReceiverPreferences receiver_preferences): receiver_preferences_(receiver_preferences) {}
         void send_package();
-        std::optional<Package> get_sending_buffer(){ return std::move(*sending_buffer);}
+        std::optional<Package> get_sending_buffer(){ return std::move(sending_buffer);}
     protected:
         void push_package(Package &&package){sending_buffer.emplace(std::move(package));};
 };

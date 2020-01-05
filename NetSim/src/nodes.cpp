@@ -20,8 +20,14 @@ void Storehouse::receive_package(Package &&package) {
 void Ramp::deliver_goods(Time time) {
     if ( (time-1) % get_delivery_interval() == 0){
         auto package = Package();
-        IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
-        receiver_ptr->receive_package(std::move(package));
+        if(get_sending_buffer()){
+            IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
+            receiver_ptr->receive_package(std::move(package));
+        }
+        else{
+            push_package(std::move(package));
+        }
+
     }
 }
 
@@ -46,12 +52,17 @@ void Worker::receive_package(Package &&package){
 //ReceiverPreferences
 
 void ReceiverPreferences::add_receiver(IPackageReceiver* receiver_ptr){
-    double added_receiver_probability = random_function_();
-    double scaled_probability = added_receiver_probability/preferences_map.size();
-    for(auto pair : preferences_map){
-        pair.second -= scaled_probability;
+    if (preferences_map.empty()){
+        preferences_map[receiver_ptr] = 1.0;
     }
-    preferences_map[receiver_ptr] = added_receiver_probability;
+    else{
+        double added_receiver_probability = random_function_();
+        double scaled_probability = added_receiver_probability/preferences_map.size();
+        for(auto &pair : preferences_map){
+            pair.second -= scaled_probability;
+        }
+        preferences_map[receiver_ptr] = added_receiver_probability;
+    }
 }
 
 void ReceiverPreferences::remove_receiver(IPackageReceiver* receiver_ptr){
@@ -62,8 +73,8 @@ void ReceiverPreferences::remove_receiver(IPackageReceiver* receiver_ptr){
             break;
         }
     }
-    for(auto pair : preferences_map){
-        double scaled_probability = removed_receiver_probability/preferences_map.size();
+    double scaled_probability = removed_receiver_probability/preferences_map.size();
+    for(auto &pair : preferences_map){
         pair.second += scaled_probability;
     }
 }
@@ -71,7 +82,7 @@ void ReceiverPreferences::remove_receiver(IPackageReceiver* receiver_ptr){
 IPackageReceiver* ReceiverPreferences::choose_receiver(){
     double random_probability = random_function_();
     double sum = 0;
-    for (const auto &pair : preferences_map){
+    for (auto &pair : preferences_map){
         sum += pair.second;
         if (sum >= random_probability)
             return pair.first;
@@ -82,7 +93,7 @@ IPackageReceiver* ReceiverPreferences::choose_receiver(){
 ReceiverPreferences::ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector){
     random_function_ = random_function;
     double probability_sum = 0;
-    for (const auto &receiver : receivers_vector) {
+    for (auto &receiver : receivers_vector) {
         if (receiver == *(receivers_vector.end() - 1))
             preferences_map[receiver] = 1 - probability_sum;
         else{
