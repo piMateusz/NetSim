@@ -15,7 +15,10 @@ void Storehouse::receive_package(Package &&package) {
 }
 
 void Ramp::deliver_goods(Time time) {
-    ;
+    if ( (time-1) % get_delivery_interval() == 0){
+        auto package = Package();
+        send_package();
+    }
 }
 
 // Worker
