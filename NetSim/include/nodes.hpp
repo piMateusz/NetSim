@@ -27,7 +27,7 @@ class Storehouse: public IPackageReceiver{
         ReceiverType receiver_type = ReceiverType::Storehouse;
     public:
         Storehouse(elementID id, std::unique_ptr<IPackageStockpile> stockpile_queue_ptr_): id_(id), stockpile_queue_ptr(std::move(stockpile_queue_ptr_)) {};
-        virtual void receive_package(Package &&package) override ;      //TO DO
+        virtual void receive_package(Package &&package) override;      //TO DO
         virtual ReceiverType get_receiver_type() override { return receiver_type;}
         virtual elementID get_id() override { return id_;}
 };
@@ -91,7 +91,7 @@ class Worker: public IPackageReceiver, PackageSender{
     public:
         Worker(elementID id, std::unique_ptr<PackageQueue> package_queue_ptr, ReceiverPreferences receiver_preferences, TimeOffset period, Time start_time):
             PackageSender(receiver_preferences), id_(id), package_queue_ptr_(std::move(package_queue_ptr)), period_(period), start_time_(start_time){};
-        virtual void receive_package(Package &&package) override ;      //TO DO
+        virtual void receive_package(Package &&package) override;      //TO DO
         virtual elementID get_id() override { return id_;}
         void do_work(Time time);            //TO DO
         virtual ReceiverType get_receiver_type() override { return receiver_type;}
