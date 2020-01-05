@@ -14,10 +14,15 @@ enum class ReceiverType{
 };
 
 class IPackageReceiver{
+    using const_package_it = std::list<Package>::const_iterator;
     public:
         virtual void receive_package(Package &&package) = 0;
         virtual elementID get_id() = 0;
         virtual ReceiverType get_receiver_type() = 0;
+/*        virtual const_package_it cbegin() const = 0;
+        virtual const_package_it cend() const = 0;
+        virtual const_package_it begin() const = 0;
+        virtual const_package_it end() const = 0;*/
 };
 
 class Storehouse: public IPackageReceiver{
@@ -30,9 +35,12 @@ class Storehouse: public IPackageReceiver{
         virtual void receive_package(Package &&package) override;      //TO DO
         virtual ReceiverType get_receiver_type() override { return receiver_type;}
         virtual elementID get_id() override { return id_;}
+/*      virtual const_package_it cbegin() const override { return stockpile_queue_ptr->};
+        virtual const_package_it cend() const override;
+        virtual const_package_it begin() const override ;
+        virtual const_package_it end() const override ;*/
 };
 
-// zrobione ale czy dobrze ?
 
 class ReceiverPreferences{
     using preferences_t = std::map<IPackageReceiver*, double>;
@@ -41,7 +49,7 @@ class ReceiverPreferences{
 
     private:
         preferences_t preferences_map;
-
+        ProbabilityGenerator random_function_;
     public:
         const_iterator cbegin() const { return preferences_map.cbegin(); }
         const_iterator cend() const { return preferences_map.cend(); }
@@ -51,6 +59,7 @@ class ReceiverPreferences{
         void add_receiver(IPackageReceiver* receiver_ptr, ProbabilityGenerator random_function);
         void remove_receiver(IPackageReceiver* receiver_prt);
         IPackageReceiver* choose_receiver();
+        ReceiverPreferences(ProbabilityGenerator random_function): preferences_map({}), random_function_(random_function){}
         ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector);
 };
 
