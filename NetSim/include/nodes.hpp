@@ -28,9 +28,9 @@ class IPackageReceiver{
 class Storehouse: public IPackageReceiver{
     private:
         elementID id_;
-        std::unique_ptr<IPackageStockpile> stockpile_queue_ptr;
         ReceiverType receiver_type = ReceiverType::Storehouse;
     public:
+        std::unique_ptr<IPackageStockpile> stockpile_queue_ptr;
         Storehouse(elementID id, std::unique_ptr<IPackageStockpile> stockpile_queue_ptr_): id_(id), stockpile_queue_ptr(std::move(stockpile_queue_ptr_)) {};
         virtual void receive_package(Package &&package) override;      //TO DO
         virtual ReceiverType get_receiver_type() override { return receiver_type;}
@@ -49,8 +49,9 @@ class ReceiverPreferences{
 
     private:
         ProbabilityGenerator random_function_;
-    public:
         preferences_t preferences_map;
+    public:
+        preferences_t& get_preferences(){ return preferences_map;}
         const_iterator cbegin() const { return preferences_map.cbegin(); }
         const_iterator cend() const { return preferences_map.cend(); }
         const_iterator begin() const { return preferences_map.cbegin(); }
@@ -70,7 +71,7 @@ class PackageSender{
         ReceiverPreferences receiver_preferences_;
         PackageSender(ReceiverPreferences receiver_preferences): receiver_preferences_(receiver_preferences) {}
         void send_package();
-        std::optional<Package> get_sending_buffer(){ return std::move(sending_buffer);}
+        std::optional<Package>& get_sending_buffer(){ return sending_buffer;}
     protected:
         void push_package(Package &&package){sending_buffer.emplace(std::move(package));};
 };
@@ -90,13 +91,13 @@ class Ramp: public PackageSender{
 class Worker: public IPackageReceiver, public PackageSender{
     private:
         elementID id_;
-        std::unique_ptr<PackageQueue> package_queue_ptr_;
         ReceiverType receiver_type = ReceiverType::Worker;
         TimeOffset period_;
         Time start_time_ = 0;
     public:
+        std::unique_ptr<PackageQueue> package_queue_ptr_;
         Worker(elementID id, std::unique_ptr<PackageQueue> package_queue_ptr, ReceiverPreferences receiver_preferences, TimeOffset period):
-            PackageSender(receiver_preferences), id_(id), package_queue_ptr_(std::move(package_queue_ptr)), period_(period){};
+            PackageSender(receiver_preferences), id_(id), period_(period), package_queue_ptr_(std::move(package_queue_ptr)){};
         virtual void receive_package(Package &&package) override;      //TO DO
         virtual elementID get_id() override { return id_;}
         void do_work(Time time);

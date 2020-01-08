@@ -34,7 +34,7 @@ void Worker::do_work(Time time){
         }
     }
     TimeOffset pd = get_processing_duration();
-    if ((time - 1) % pd == 0 ) {
+    if (time % pd == 0 ) {
         send_package();
     }
 }
@@ -81,9 +81,21 @@ IPackageReceiver* ReceiverPreferences::choose_receiver(){
     double random_probability = random_function_();
     double sum = 0;
     for (auto &pair : preferences_map){
-        sum += pair.second;
-        if (sum >= random_probability)
-            return pair.first;
+        if(*preferences_map.cbegin() == pair){
+            if (0 <= random_probability and random_probability <= pair.second)
+                return pair.first;
+            else{
+                sum += pair.second;
+            }
+        }
+        else{
+            if (sum < random_probability and random_probability < sum + pair.second){
+                return pair.first;
+            }
+            else{
+                sum += pair.second;
+            }
+        }
     }
     return nullptr;
 }
