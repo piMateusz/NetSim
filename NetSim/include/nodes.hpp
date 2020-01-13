@@ -86,9 +86,9 @@ public:
     virtual void send_package();
     Ramp(ElementID id, TimeOffset period):
             id_(id), period_(period){};
-    void deliver_goods(Time time);      //TO DO
-    TimeOffset get_delivery_interval(){ return period_;}
-    ElementID get_id() { return id_;};
+    void deliver_goods(const Time time);      //TO DO
+    TimeOffset get_delivery_interval()const { return period_;}
+    ElementID get_id() const { return id_;};
 };
 
 class Worker: public IPackageReceiver, public PackageSender{
@@ -105,10 +105,10 @@ public:
     virtual ~Worker()= default;
     virtual void receive_package(Package &&package) override;      //TO DO
     /*virtual ElementID get_id() override { return id_;}*/
-    void do_work(Time time);
+    void do_work(const Time time);
     /*virtual ReceiverType get_receiver_type() override { return receiver_type;}*/
-    TimeOffset get_processing_duration(){ return period_;}
-    Time get_package_processing_start_time(){ return start_time_;}
+    TimeOffset get_processing_duration()const { return period_;}
+    Time get_package_processing_start_time()const { return start_time_;}
     virtual const_package_it cbegin() const override { return package_queue_ptr_->cbegin();}
     virtual const_package_it cend() const override { return package_queue_ptr_->cend();}
     virtual const_package_it begin() const override { return package_queue_ptr_->begin();}

@@ -21,7 +21,7 @@ void Storehouse::receive_package(Package &&package) {
 
 //Ramp
 
-void Ramp::deliver_goods(Time time) {
+void Ramp::deliver_goods(const Time time) {
     if ( (time-1) % get_delivery_interval() == 0){
         auto package = Package();
         push_package(std::move(package));
@@ -44,7 +44,7 @@ void Worker::send_package(){
     }
 }
 
-void Worker::do_work(Time time){
+void Worker::do_work(const Time time){
     if (!get_sending_buffer()){
         if(!package_queue_ptr_->empty()){
             push_package(package_queue_ptr_->pop());
