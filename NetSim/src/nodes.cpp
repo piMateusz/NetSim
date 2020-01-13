@@ -70,7 +70,7 @@ void Worker::receive_package(Package &&package){
 //ReceiverPreferences
 
 void ReceiverPreferences::add_receiver(IPackageReceiver* receiver_ptr){
-    if (preferences_map.empty()){
+/*    if (preferences_map.empty()){
         preferences_map[receiver_ptr] = 1.0;
     }
     else{
@@ -80,11 +80,15 @@ void ReceiverPreferences::add_receiver(IPackageReceiver* receiver_ptr){
             pair.second -= scaled_probability;
         }
         preferences_map[receiver_ptr] = added_receiver_probability;
-    }
+    }*/
+    preferences_map[receiver_ptr] = 1;
+    if(preferences_map.empty()) return;
+    int length = preferences_map.size();
+    for(auto& elem : preferences_map) elem.second = 1.0/length;
 }
 
 void ReceiverPreferences::remove_receiver(IPackageReceiver* receiver_ptr){
-    double removed_receiver_probability = preferences_map[receiver_ptr];
+/*    double removed_receiver_probability = preferences_map[receiver_ptr];
     for(auto it = preferences_map.begin(); it != preferences_map.end();){
         if (it->first == receiver_ptr){
             it = preferences_map.erase(it);
@@ -94,7 +98,11 @@ void ReceiverPreferences::remove_receiver(IPackageReceiver* receiver_ptr){
     double scaled_probability = removed_receiver_probability/preferences_map.size();
     for(auto &pair : preferences_map){
         pair.second += scaled_probability;
-    }
+    }*/
+    preferences_map.erase(receiver_ptr);
+    if(preferences_map.empty()) return;
+    int length = preferences_map.size();
+    for(auto& elem : preferences_map) elem.second = 1.0/length;
 }
 
 IPackageReceiver* ReceiverPreferences::choose_receiver(){
