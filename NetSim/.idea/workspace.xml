@@ -17,6 +17,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="688f69f4-430a-4547-9928-2008985619ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/nodes.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/nodes.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/NetSim_tests.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/NetSim_tests.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/nodes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/nodes.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../googletest-master/.clang-format" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../googletest-master/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../googletest-master/.travis.yml" beforeDir="false" />
@@ -456,7 +464,7 @@
       <workItem from="1578870707437" duration="506000" />
       <workItem from="1578871549739" duration="1627000" />
       <workItem from="1578903525649" duration="8749000" />
-      <workItem from="1578936480392" duration="6974000" />
+      <workItem from="1578936480392" duration="8258000" />
     </task>
     <servers />
   </component>
@@ -497,22 +505,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577985047352" />
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom" timestamp="1578952094421">
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom" timestamp="1578953599797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578952094421" />
-    <state width="1493" height="2" key="GridCell.Tab.0.center" timestamp="1578952094421">
+    <state width="1493" height="171" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578953599797" />
+    <state width="1493" height="171" key="GridCell.Tab.0.center" timestamp="1578953599797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578952094421" />
-    <state width="1493" height="2" key="GridCell.Tab.0.left" timestamp="1578952094421">
+    <state width="1493" height="171" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578953599797" />
+    <state width="1493" height="171" key="GridCell.Tab.0.left" timestamp="1578953599797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578952094421" />
-    <state width="1493" height="2" key="GridCell.Tab.0.right" timestamp="1578952094421">
+    <state width="1493" height="171" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578953599797" />
+    <state width="1493" height="171" key="GridCell.Tab.0.right" timestamp="1578953599797">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="2" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578952094421" />
+    <state width="1493" height="171" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578953599797" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1578263649452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

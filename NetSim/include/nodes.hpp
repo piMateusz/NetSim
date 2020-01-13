@@ -20,6 +20,7 @@ public:
     virtual void receive_package(Package &&package) = 0;
     /*virtual ElementID get_id() = 0;*/
     /*virtual ReceiverType get_receiver_type() = 0;*/           //nie odkomentowywac!!!!!
+    virtual ~IPackageReceiver(){}
     virtual const_package_it cbegin() const = 0;
     virtual const_package_it cend() const = 0;
     virtual const_package_it begin() const = 0;
@@ -31,7 +32,7 @@ private:
     ElementID id_;
     ReceiverType receiver_type = ReceiverType::Storehouse;
 public:
-    ~Storehouse()= default;
+    virtual ~Storehouse()= default;
     std::unique_ptr<IPackageStockpile> stockpile_queue_ptr;
     Storehouse(ElementID id, std::unique_ptr<IPackageStockpile> stockpile_queue_ptr_): id_(id), stockpile_queue_ptr(std::move(stockpile_queue_ptr_)) {};
     virtual void receive_package(Package &&package) override;      //TO DO
@@ -101,7 +102,7 @@ public:
     std::unique_ptr<PackageQueue> package_queue_ptr_;
     Worker(ElementID id, TimeOffset period, std::unique_ptr<PackageQueue> package_queue_ptr):
             id_(id), period_(period), package_queue_ptr_(std::move(package_queue_ptr)){};
-    ~Worker()= default;
+    virtual ~Worker()= default;
     virtual void receive_package(Package &&package) override;      //TO DO
     /*virtual ElementID get_id() override { return id_;}*/
     void do_work(Time time);
