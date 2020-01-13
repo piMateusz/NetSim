@@ -10,15 +10,15 @@
 
 class Package{
     private:
-        static const elementID deleted_id = 0;
-        static std::set<elementID> assigned_IDs;
-        static std::set<elementID> freed_IDs;
-        elementID id_number = deleted_id;
+        static const ElementID deleted_id = 0;
+        static std::set<ElementID> assigned_IDs;
+        static std::set<ElementID> freed_IDs;
+        ElementID id_number = deleted_id;
     public:
         Package();
         Package(Package &&package) noexcept ;
         Package& operator=(Package&& package);
-        elementID get_id() const { return id_number;}
+        ElementID get_id() const { return id_number;}
         ~Package();
 };
 #endif //NETSIM_PACKAGE_HPP*/
@@ -47,7 +47,7 @@ class Package {
 public:
     Package();
 
-    explicit Package(elementID id);
+    explicit Package(ElementID id);
 
     Package(const Package&) = delete;
     Package(Package&&) noexcept;
@@ -57,10 +57,10 @@ public:
 
     ~Package();
 
-    elementID get_id() const { return id_; }
+    ElementID get_id() const { return id_; }
 
 private:
-    static const elementID BLANK_ID = -1;
+    static const ElementID BLANK_ID = -1;
 
     /*
      * Począwszy od C++17 pola statyczne mogą być oznaczane jako `inline`,
@@ -69,12 +69,12 @@ private:
      */
 
     // Pula identyfikatorów aktualnie przyporządkowanych półproduktom.
-    inline static std::set<elementID> assigned_ids_{0};
+    inline static std::set<ElementID> assigned_ids_{0};
 
     // Pula identyfikatorów, które zostały zwolnione w wyniku usuwania półproduktów.
-    inline static std::set<elementID> freed_ids_;
+    inline static std::set<ElementID> freed_ids_;
 
-    elementID id_ = BLANK_ID;
+    ElementID id_ = BLANK_ID;
 };
 
 #endif //NET_SIMULATION_PACKAGE_HPP

@@ -434,6 +434,33 @@ test/test_nodes.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.s
 .PHONY : test/test_nodes.cpp.s
 
+test/test_nodes_pawel.obj: test/test_nodes_pawel.cpp.obj
+
+.PHONY : test/test_nodes_pawel.obj
+
+# target to build an object file
+test/test_nodes_pawel.cpp.obj:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj
+.PHONY : test/test_nodes_pawel.cpp.obj
+
+test/test_nodes_pawel.i: test/test_nodes_pawel.cpp.i
+
+.PHONY : test/test_nodes_pawel.i
+
+# target to preprocess a source file
+test/test_nodes_pawel.cpp.i:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.i
+.PHONY : test/test_nodes_pawel.cpp.i
+
+test/test_nodes_pawel.s: test/test_nodes_pawel.cpp.s
+
+.PHONY : test/test_nodes_pawel.s
+
+# target to generate assembly for a file
+test/test_nodes_pawel.cpp.s:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.s
+.PHONY : test/test_nodes_pawel.cpp.s
+
 test/test_package.obj: test/test_package.cpp.obj
 
 .PHONY : test/test_package.obj
@@ -461,6 +488,33 @@ test/test_package.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_package.cpp.s
 .PHONY : test/test_package.cpp.s
 
+test/test_package_pawel.obj: test/test_package_pawel.cpp.obj
+
+.PHONY : test/test_package_pawel.obj
+
+# target to build an object file
+test/test_package_pawel.cpp.obj:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.obj
+.PHONY : test/test_package_pawel.cpp.obj
+
+test/test_package_pawel.i: test/test_package_pawel.cpp.i
+
+.PHONY : test/test_package_pawel.i
+
+# target to preprocess a source file
+test/test_package_pawel.cpp.i:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.i
+.PHONY : test/test_package_pawel.cpp.i
+
+test/test_package_pawel.s: test/test_package_pawel.cpp.s
+
+.PHONY : test/test_package_pawel.s
+
+# target to generate assembly for a file
+test/test_package_pawel.cpp.s:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.s
+.PHONY : test/test_package_pawel.cpp.s
+
 test/test_storage_types.obj: test/test_storage_types.cpp.obj
 
 .PHONY : test/test_storage_types.obj
@@ -487,6 +541,33 @@ test/test_storage_types.s: test/test_storage_types.cpp.s
 test/test_storage_types.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.s
 .PHONY : test/test_storage_types.cpp.s
+
+test/test_storage_types_pawel.obj: test/test_storage_types_pawel.cpp.obj
+
+.PHONY : test/test_storage_types_pawel.obj
+
+# target to build an object file
+test/test_storage_types_pawel.cpp.obj:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.obj
+.PHONY : test/test_storage_types_pawel.cpp.obj
+
+test/test_storage_types_pawel.i: test/test_storage_types_pawel.cpp.i
+
+.PHONY : test/test_storage_types_pawel.i
+
+# target to preprocess a source file
+test/test_storage_types_pawel.cpp.i:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.i
+.PHONY : test/test_storage_types_pawel.cpp.i
+
+test/test_storage_types_pawel.s: test/test_storage_types_pawel.cpp.s
+
+.PHONY : test/test_storage_types_pawel.s
+
+# target to generate assembly for a file
+test/test_storage_types_pawel.cpp.s:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.s
+.PHONY : test/test_storage_types_pawel.cpp.s
 
 # Help Target
 help:
@@ -527,12 +608,21 @@ help:
 	@echo ... test/test_nodes.obj
 	@echo ... test/test_nodes.i
 	@echo ... test/test_nodes.s
+	@echo ... test/test_nodes_pawel.obj
+	@echo ... test/test_nodes_pawel.i
+	@echo ... test/test_nodes_pawel.s
 	@echo ... test/test_package.obj
 	@echo ... test/test_package.i
 	@echo ... test/test_package.s
+	@echo ... test/test_package_pawel.obj
+	@echo ... test/test_package_pawel.i
+	@echo ... test/test_package_pawel.s
 	@echo ... test/test_storage_types.obj
 	@echo ... test/test_storage_types.i
 	@echo ... test/test_storage_types.s
+	@echo ... test/test_storage_types_pawel.obj
+	@echo ... test/test_storage_types_pawel.i
+	@echo ... test/test_storage_types_pawel.s
 .PHONY : help
 
 

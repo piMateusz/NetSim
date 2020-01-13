@@ -17,8 +17,8 @@ class IPackageReceiver{
     public:
         using const_package_it = std::list<Package>::const_iterator;
         virtual void receive_package(Package &&package) = 0;
-        virtual elementID get_id() = 0;
-        virtual ReceiverType get_receiver_type() = 0;
+        /*virtual ElementID get_id() = 0;*/
+        /*virtual ReceiverType get_receiver_type() = 0;*/
         virtual const_package_it cbegin() const = 0;
         virtual const_package_it cend() const = 0;
         virtual const_package_it begin() const = 0;
@@ -27,14 +27,15 @@ class IPackageReceiver{
 
 class Storehouse: public IPackageReceiver{
     private:
-        elementID id_;
+        ElementID id_;
         ReceiverType receiver_type = ReceiverType::Storehouse;
     public:
+        ~Storehouse()= default;
         std::unique_ptr<IPackageStockpile> stockpile_queue_ptr;
-        Storehouse(elementID id, std::unique_ptr<IPackageStockpile> stockpile_queue_ptr_): id_(id), stockpile_queue_ptr(std::move(stockpile_queue_ptr_)) {};
+        Storehouse(ElementID id, std::unique_ptr<IPackageStockpile> stockpile_queue_ptr_): id_(id), stockpile_queue_ptr(std::move(stockpile_queue_ptr_)) {};
         virtual void receive_package(Package &&package) override;      //TO DO
-        virtual ReceiverType get_receiver_type() override { return receiver_type;}
-        virtual elementID get_id() override { return id_;}
+        /*virtual ReceiverType get_receiver_type() override { return receiver_type;}*/
+        /*virtual ElementID get_id() override { return id_;}*/
         virtual const_package_it cbegin() const override { return stockpile_queue_ptr->cbegin();}
         virtual const_package_it cend() const override { return stockpile_queue_ptr->cend();}
         virtual const_package_it begin() const override { return stockpile_queue_ptr->begin();}
@@ -48,9 +49,9 @@ class ReceiverPreferences{
     using iterator = preferences_t::iterator;
 
     private:
-        ProbabilityGenerator random_function_;
         preferences_t preferences_map;
     public:
+        ProbabilityGenerator random_function_ = [](){ return (double)rand() / RAND_MAX; };
         preferences_t& get_preferences(){ return preferences_map;}
         const_iterator cbegin() const { return preferences_map.cbegin(); }
         const_iterator cend() const { return preferences_map.cend(); }
@@ -60,8 +61,8 @@ class ReceiverPreferences{
         void add_receiver(IPackageReceiver* receiver_ptr);
         void remove_receiver(IPackageReceiver* receiver_prt);
         IPackageReceiver* choose_receiver();
-        ReceiverPreferences(ProbabilityGenerator random_function): random_function_(random_function), preferences_map({}){}
-        ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector);
+/*        ReceiverPreferences(ProbabilityGenerator random_function): random_function_(random_function), preferences_map({}){}
+        ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector);*/
 };
 
 
@@ -69,39 +70,43 @@ class PackageSender{
     public:
         std::optional<Package> sending_buffer = std::nullopt;
         ReceiverPreferences receiver_preferences_;
-        PackageSender(ReceiverPreferences receiver_preferences): receiver_preferences_(receiver_preferences) {}
-        void send_package();
+        /*PackageSender(ReceiverPreferences receiver_preferences): receiver_preferences_(receiver_preferences) {}*/
+        virtual void send_package();
         std::optional<Package>& get_sending_buffer(){ return sending_buffer;}
+        /*PackageSender(PackageSender &&) = default;*/
     protected:
         void push_package(Package &&package){sending_buffer.emplace(std::move(package));};
 };
 
 class Ramp: public PackageSender{
     private:
-        elementID id_;
+        ElementID id_;
         TimeOffset period_;
     public:
-        Ramp(elementID id, TimeOffset period, ReceiverPreferences receiver_preferences):
-            PackageSender(receiver_preferences), id_(id), period_(period){};
+        virtual void send_package();
+        Ramp(ElementID id, TimeOffset period):
+            id_(id), period_(period){};
         void deliver_goods(Time time);      //TO DO
         TimeOffset get_delivery_interval(){ return period_;}
-        elementID get_id() { return id_;};
+        ElementID get_id() { return id_;};
 };
 
 class Worker: public IPackageReceiver, public PackageSender{
     private:
-        elementID id_;
+        ElementID id_;
         ReceiverType receiver_type = ReceiverType::Worker;
         TimeOffset period_;
         Time start_time_ = 0;
     public:
+        virtual void send_package();
         std::unique_ptr<PackageQueue> package_queue_ptr_;
-        Worker(elementID id, std::unique_ptr<PackageQueue> package_queue_ptr, ReceiverPreferences receiver_preferences, TimeOffset period):
-            PackageSender(receiver_preferences), id_(id), period_(period), package_queue_ptr_(std::move(package_queue_ptr)){};
+        Worker(ElementID id, TimeOffset period, std::unique_ptr<PackageQueue> package_queue_ptr):
+            id_(id), period_(period), package_queue_ptr_(std::move(package_queue_ptr)){};
+        ~Worker()= default;
         virtual void receive_package(Package &&package) override;      //TO DO
-        virtual elementID get_id() override { return id_;}
+        /*virtual ElementID get_id() override { return id_;}*/
         void do_work(Time time);
-        virtual ReceiverType get_receiver_type() override { return receiver_type;}
+        /*virtual ReceiverType get_receiver_type() override { return receiver_type;}*/
         TimeOffset get_processing_duration(){ return period_;}
         Time get_package_processing_start_time(){ return start_time_;}
         virtual const_package_it cbegin() const override { return package_queue_ptr_->cbegin();}

@@ -29,8 +29,6 @@ package.hpp
 ../include/package.hpp
 types.hpp
 ../include/types.hpp
-crtdbg.h
--
 list
 -
 

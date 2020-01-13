@@ -403,10 +403,19 @@
 		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_nodes.cpp">
 			<Option target="NetSim_tests"/>
 		</Unit>
+		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_nodes_pawel.cpp">
+			<Option target="NetSim_tests"/>
+		</Unit>
 		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_package.cpp">
 			<Option target="NetSim_tests"/>
 		</Unit>
+		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_package_pawel.cpp">
+			<Option target="NetSim_tests"/>
+		</Unit>
 		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_storage_types.cpp">
+			<Option target="NetSim_tests"/>
+		</Unit>
+		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_storage_types_pawel.cpp">
 			<Option target="NetSim_tests"/>
 		</Unit>
 		<Unit filename="C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/googletest-master/googlemock/src/gmock-all.cc">

@@ -24,6 +24,9 @@ set(SOURCES_FILES_TESTS
         test/test_package.cpp
         test/test_storage_types.cpp
         test/test_nodes.cpp
+        test/test_package_pawel.cpp
+        test/test_storage_types_pawel.cpp
+        test/test_nodes_pawel.cpp
         )
 
 add_executable(NetSim_tests ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)

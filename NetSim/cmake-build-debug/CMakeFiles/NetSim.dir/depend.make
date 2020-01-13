@@ -6,6 +6,8 @@ CMakeFiles/NetSim.dir/main.cpp.obj: ../include/storage_types.hpp
 CMakeFiles/NetSim.dir/main.cpp.obj: ../include/types.hpp
 CMakeFiles/NetSim.dir/main.cpp.obj: ../main.cpp
 
+CMakeFiles/NetSim.dir/src/helpers.cpp.obj: ../include/helpers.hpp
+CMakeFiles/NetSim.dir/src/helpers.cpp.obj: ../include/types.hpp
 CMakeFiles/NetSim.dir/src/helpers.cpp.obj: ../src/helpers.cpp
 
 CMakeFiles/NetSim.dir/src/nodes.cpp.obj: ../include/nodes.hpp

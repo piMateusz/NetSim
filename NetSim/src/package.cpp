@@ -6,8 +6,8 @@
 #include "package.hpp"
 //Initializing static sets
 
-std::set<elementID> Package::assigned_IDs = {0};
-std::set<elementID> Package::freed_IDs;
+std::set<ElementID> Package::assigned_IDs = {0};
+std::set<ElementID> Package::freed_IDs;
 
 Package& Package::operator=(Package&& package){
     if (id_number != deleted_id) {
@@ -56,13 +56,13 @@ Package::~Package(){
 
 #include <stdexcept>
 
-void insert_if_not_exists(std::set<elementID>& s, elementID e) {
+void insert_if_not_exists(std::set<ElementID>& s, ElementID e) {
     if (s.find(e) == s.end()) {
         s.insert(e);
     }
 }
 
-void erase_if_exists(std::set<elementID>& s, elementID e) {
+void erase_if_exists(std::set<ElementID>& s, ElementID e) {
     if (s.find(e) != s.end()) {
         s.erase(e);
     }
@@ -81,7 +81,7 @@ Package::Package() {
     assigned_ids_.insert(id_);
 }
 
-Package::Package(elementID id) {
+Package::Package(ElementID id) {
     if (assigned_ids_.find(id) != assigned_ids_.end()) {
         throw std::invalid_argument("The ID of " + std::to_string(id) + " is already assigned!");
     }

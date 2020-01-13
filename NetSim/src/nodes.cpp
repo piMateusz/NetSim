@@ -17,15 +17,30 @@ void Storehouse::receive_package(Package &&package) {
     stockpile_queue_ptr->push(std::move(package));
 }
 
+//Ramp
+
 void Ramp::deliver_goods(Time time) {
     if ( (time-1) % get_delivery_interval() == 0){
         auto package = Package();
         push_package(std::move(package));
-        send_package();
     }
 }
 
+void Ramp::send_package(){
+    IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
+    receiver_ptr->receive_package(std::move(*get_sending_buffer()));
+    get_sending_buffer().reset();
+}
+
 // Worker
+
+void Worker::send_package(){
+    if(!start_time_){
+        IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
+        receiver_ptr->receive_package(std::move(*get_sending_buffer()));
+        get_sending_buffer().reset();
+    }
+}
 
 void Worker::do_work(Time time){
     if (!get_sending_buffer()){
@@ -33,11 +48,14 @@ void Worker::do_work(Time time){
             push_package(package_queue_ptr_->pop());
         }
     }
-    TimeOffset pd = get_processing_duration();
-    if (time % pd == 0 ) {
-        send_package();
+    if (start_time_ == 0){
+        start_time_ = time;
     }
+    if(start_time_ == time - get_processing_duration())
+        start_time_ = 0;
 }
+
+
 void Worker::receive_package(Package &&package){
     if (get_sending_buffer()){
         package_queue_ptr_->push(std::move(package));
@@ -100,7 +118,7 @@ IPackageReceiver* ReceiverPreferences::choose_receiver(){
     return nullptr;
 }
 
-ReceiverPreferences::ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector){
+/*ReceiverPreferences::ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector){
     random_function_ = random_function;
     double probability_sum = 0;
     for (auto &receiver : receivers_vector) {
@@ -111,4 +129,4 @@ ReceiverPreferences::ReceiverPreferences(ProbabilityGenerator random_function, s
             probability_sum += preferences_map[receiver];
         }
     }
-}
+}*/

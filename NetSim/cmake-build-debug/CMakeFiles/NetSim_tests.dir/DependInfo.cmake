@@ -10,8 +10,11 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/storage_types.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/storage_types.cpp.obj"
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/main_gtest.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj"
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_nodes.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj"
+  "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_nodes_pawel.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj"
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_package.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj"
+  "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_package_pawel.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.obj"
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_storage_types.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj"
+  "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/test/test_storage_types_pawel.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

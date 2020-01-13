@@ -18,21 +18,52 @@
   <component name="ChangeListManager">
     <list default="true" id="688f69f4-430a-4547-9928-2008985619ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/helpers.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/helpers.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/nodes.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/nodes.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/package.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/package.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/storage_types.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim.dir/src/storage_types.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/helpers.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/helpers.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/nodes.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/nodes.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/package.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/package.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/storage_types.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/src/storage_types.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/NetSim.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/NetSim.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/NetSim.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/NetSim.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/NetSim_tests.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/NetSim_tests.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googlemock/CMakeFiles/gmock_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googletest/CMakeFiles/gtest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googletest/CMakeFiles/gtest.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googletest/CMakeFiles/gtest_main.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/googletest-master/googletest/CMakeFiles/gtest_main.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/helpers.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/helpers.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/nodes.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/nodes.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/package.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/package.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/storage_types.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/storage_types.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/types.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/types.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/nodes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/nodes.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main_gtest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/main_gtest.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/test_nodes.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test/test_nodes.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../googletest-master/.clang-format" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../googletest-master/.gitignore" beforeDir="false" />
@@ -322,20 +353,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../semestr 1/WDI, informatyka 1/C_Lion/mdig-agh-air_inf1_lab_cpp_exercises-ee7e1e282284/solutions/matlab-8" />
     <property name="settings.editor.selected.configurable" value="CPPToolchains" />
   </component>
-  <component name="RunManager" selected="Google Test.All in test_nodes.cpp">
-    <configuration name="All in test_nodes.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/test_nodes.cpp)" TEST_MODE="PATTERN">
+  <component name="RunManager" selected="CMake Application.NetSim_tests">
+    <configuration name="All in test_nodes.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/test_nodes.cpp)" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in test_package.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/test_package.cpp)" TEST_MODE="PATTERN">
+    <configuration name="All in test_package.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/test_package.cpp)" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in test_storage_types.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/test_storage_types.cpp)" TEST_MODE="PATTERN">
+    <configuration name="All in test_storage_types.cpp" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_PATTERN="all-tests(file://$PROJECT_DIR$/test/test_storage_types.cpp)" TEST_MODE="PATTERN">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -347,13 +378,13 @@
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NetWork_storage_types_test.fifo_pop" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_CLASS="NetWork_storage_types_test" TEST_METHOD="fifo_pop" TEST_MODE="SUITE_TEST">
+    <configuration name="NetWork_receiver_preferences_test.probability_scaling" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_CLASS="NetWork_receiver_preferences_test" TEST_METHOD="probability_scaling" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NetWork_storage_types_test.lifo_pop" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_CLASS="NetWork_storage_types_test" TEST_METHOD="lifo_pop" TEST_MODE="SUITE_TEST">
+    <configuration name="NetWork_storage_types_test.fifo_pop" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="NetSim" TARGET_NAME="NetSim_tests" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="NetSim" RUN_TARGET_NAME="NetSim_tests" TEST_CLASS="NetWork_storage_types_test" TEST_METHOD="fifo_pop" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
@@ -400,16 +431,16 @@
       <item itemvalue="Google Test.All in test_storage_types.cpp" />
       <item itemvalue="Google Test.NetWork_storage_types_test.fifo_pop" />
       <item itemvalue="Google Test.All in test_package.cpp" />
-      <item itemvalue="Google Test.NetWork_storage_types_test.lifo_pop" />
       <item itemvalue="Google Test.All in test_nodes.cpp" />
+      <item itemvalue="Google Test.NetWork_receiver_preferences_test.probability_scaling" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Google Test.NetWork_receiver_preferences_test.probability_scaling" />
         <item itemvalue="Google Test.All in test_nodes.cpp" />
         <item itemvalue="Google Test.All in test_storage_types.cpp" />
         <item itemvalue="Google Test.All in test_package.cpp" />
         <item itemvalue="Google Test.NetWork_storage_types_test.fifo_pop" />
-        <item itemvalue="Google Test.NetWork_storage_types_test.lifo_pop" />
       </list>
     </recent_temporary>
   </component>
@@ -467,7 +498,12 @@
       <workItem from="1578251020126" duration="11185000" />
       <workItem from="1578263737286" duration="53000" />
       <workItem from="1578429899276" duration="12836000" />
-      <workItem from="1578472716899" duration="1192000" />
+      <workItem from="1578472716899" duration="1654000" />
+      <workItem from="1578483898218" duration="3990000" />
+      <workItem from="1578867198602" duration="346000" />
+      <workItem from="1578870707437" duration="506000" />
+      <workItem from="1578871549739" duration="1627000" />
+      <workItem from="1578903525649" duration="8749000" />
     </task>
     <servers />
   </component>
@@ -492,10 +528,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="496" y="133" key="#NetSim/0.0.1536.824@0.0.1536.824" timestamp="1576184539567" />
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1576757063933">
+    <state x="329" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578487105039">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1576757063933" />
+    <state x="329" y="58" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1578487105039" />
     <state x="496" y="133" key="#gtest_main" timestamp="1576711794373">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -508,22 +544,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1577985047352" />
-    <state width="723" height="107" key="GridCell.Tab.0.bottom" timestamp="1578473747261">
+    <state width="1493" height="237" key="GridCell.Tab.0.bottom" timestamp="1578915782502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="107" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578473747261" />
-    <state width="723" height="107" key="GridCell.Tab.0.center" timestamp="1578473747261">
+    <state width="1493" height="237" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1578915782502" />
+    <state width="1493" height="237" key="GridCell.Tab.0.center" timestamp="1578915782502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="107" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578473747261" />
-    <state width="723" height="107" key="GridCell.Tab.0.left" timestamp="1578473747260">
+    <state width="1493" height="237" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1578915782502" />
+    <state width="1493" height="237" key="GridCell.Tab.0.left" timestamp="1578915782502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="107" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578473747260" />
-    <state width="723" height="107" key="GridCell.Tab.0.right" timestamp="1578473747261">
+    <state width="1493" height="237" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1578915782502" />
+    <state width="1493" height="237" key="GridCell.Tab.0.right" timestamp="1578915782502">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="723" height="107" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578473747261" />
+    <state width="1493" height="237" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1578915782502" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1578263649452">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -544,10 +580,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1578173341177" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1578472717716">
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1578903617171">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1578472717716" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1578903617171" />
+    <state x="417" y="61" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1578872833769">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="417" y="61" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1536.824@0.0.1536.824" timestamp="1578872833769" />
     <state x="41" y="190" key="run.anything.popup" timestamp="1578473022823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
