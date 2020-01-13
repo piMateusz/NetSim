@@ -6,9 +6,11 @@
 //PackageSender
 
 void PackageSender::send_package(){
-    IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
-    receiver_ptr->receive_package(std::move(*get_sending_buffer()));
-    get_sending_buffer().reset();
+    if(get_sending_buffer()){
+        IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
+        receiver_ptr->receive_package(std::move(*get_sending_buffer()));
+        get_sending_buffer().reset();
+    }
 }
 
 //Storehouse
@@ -117,16 +119,3 @@ IPackageReceiver* ReceiverPreferences::choose_receiver(){
     }
     return nullptr;
 }
-
-/*ReceiverPreferences::ReceiverPreferences(ProbabilityGenerator random_function, std::vector<IPackageReceiver*> receivers_vector){
-    random_function_ = random_function;
-    double probability_sum = 0;
-    for (auto &receiver : receivers_vector) {
-        if (receiver == *(receivers_vector.end() - 1))
-            preferences_map[receiver] = 1 - probability_sum;
-        else{
-            preferences_map[receiver] = random_function();
-            probability_sum += preferences_map[receiver];
-        }
-    }
-}*/

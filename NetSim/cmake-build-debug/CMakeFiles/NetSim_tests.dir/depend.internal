@@ -6,6 +6,7 @@ CMakeFiles/NetSim_tests.dir/src/helpers.cpp.obj
  ../include/types.hpp
  C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/helpers.cpp
 CMakeFiles/NetSim_tests.dir/src/nodes.cpp.obj
+ ../include/helpers.hpp
  ../include/nodes.hpp
  ../include/package.hpp
  ../include/storage_types.hpp

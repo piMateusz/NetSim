@@ -30,7 +30,6 @@ set(SOURCES_FILES_TESTS
         )
 
 add_executable(NetSim_tests ${SOURCE_FILES} ${SOURCES_FILES_TESTS} test/main_gtest.cpp)
-
 target_include_directories(NetSim_tests PUBLIC
         ../../googletest-master/googlemock/include
         ../../googletest-master/googletest/include
