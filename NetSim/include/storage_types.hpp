@@ -19,7 +19,7 @@ class IPackageStockpile{
         virtual bool empty() const= 0;
         virtual void push(Package &&package) = 0;
         virtual std::size_t size() const = 0;
-        virtual ~IPackageStockpile(){}
+        virtual ~IPackageStockpile() = default;
         virtual const_iterator cbegin() const = 0;
         virtual const_iterator cend() const = 0;
         virtual const_iterator begin() const = 0;
