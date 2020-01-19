@@ -20,8 +20,8 @@ class NodeCollection{
     public:
         void add(Node&& node) { collection.emplace_back(std::move(node));};
         void remove_by_id(ElementID id_){ collection.erase(find_by_id(id_));};
-        iterator find_by_id(ElementID id_) { return std::find_if(collection.begin(), collection.end(), [&](auto &elem) { return elem.get_id() == id_; });};
-        const_iterator find_by_id(ElementID id_) const { return std::find_if(collection.begin(), collection.end(), [&](const auto &elem) { return elem.get_id() == id_; });};
+        iterator find_by_id(ElementID id_) { return std::find_if(collection.begin(), collection.end(), [&id_](auto &elem) { return elem.get_id() == id_; });};
+        const_iterator find_by_id(ElementID id_) const { return std::find_if(collection.begin(), collection.end(), [&id_](const auto &elem) { return elem.get_id() == id_; });};
 
         iterator begin() { return collection.begin();};
         iterator end(){ return collection.end(); };
@@ -35,7 +35,8 @@ class Factory{
         NodeCollection<Worker> workers;
         NodeCollection<Ramp> ramps;
         NodeCollection<Storehouse> storehouses;
-
+        template<typename Node>
+        void remove_receiver(NodeCollection<Node>& collection,ElementID id);
     public:
         //Ramp
         void add_ramp(Ramp&& ramp){ ramps.add(std::move(ramp)); };
