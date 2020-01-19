@@ -2,8 +2,6 @@
 // Created by Jean Jacob on 2020-01-18.
 
 
-#include <factory.hpp>
-
 #include "factory.hpp"
 
 enum color_enum{

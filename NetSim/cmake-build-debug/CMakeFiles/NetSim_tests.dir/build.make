@@ -112,10 +112,24 @@ CMakeFiles/NetSim_tests.dir/src/helpers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim_tests.dir/src/helpers.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\helpers.cpp" -o CMakeFiles\NetSim_tests.dir\src\helpers.cpp.s
 
+CMakeFiles/NetSim_tests.dir/src/factory.cpp.obj: CMakeFiles/NetSim_tests.dir/flags.make
+CMakeFiles/NetSim_tests.dir/src/factory.cpp.obj: CMakeFiles/NetSim_tests.dir/includes_CXX.rsp
+CMakeFiles/NetSim_tests.dir/src/factory.cpp.obj: ../src/factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NetSim_tests.dir/src/factory.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim_tests.dir\src\factory.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\factory.cpp"
+
+CMakeFiles/NetSim_tests.dir/src/factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim_tests.dir/src/factory.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\factory.cpp" > CMakeFiles\NetSim_tests.dir\src\factory.cpp.i
+
+CMakeFiles/NetSim_tests.dir/src/factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim_tests.dir/src/factory.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\src\factory.cpp" -o CMakeFiles\NetSim_tests.dir\src\factory.cpp.s
+
 CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj: CMakeFiles/NetSim_tests.dir/flags.make
 CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj: CMakeFiles/NetSim_tests.dir/includes_CXX.rsp
 CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj: ../test/test_package.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim_tests.dir\test\test_package.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_package.cpp"
 
 CMakeFiles/NetSim_tests.dir/test/test_package.cpp.i: cmake_force
@@ -129,7 +143,7 @@ CMakeFiles/NetSim_tests.dir/test/test_package.cpp.s: cmake_force
 CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj: CMakeFiles/NetSim_tests.dir/flags.make
 CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj: CMakeFiles/NetSim_tests.dir/includes_CXX.rsp
 CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj: ../test/test_storage_types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim_tests.dir\test\test_storage_types.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_storage_types.cpp"
 
 CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.i: cmake_force
@@ -143,7 +157,7 @@ CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.s: cmake_force
 CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj: CMakeFiles/NetSim_tests.dir/flags.make
 CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj: CMakeFiles/NetSim_tests.dir/includes_CXX.rsp
 CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj: ../test/test_nodes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim_tests.dir\test\test_nodes.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_nodes.cpp"
 
 CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.i: cmake_force
@@ -157,7 +171,7 @@ CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.s: cmake_force
 CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.obj: CMakeFiles/NetSim_tests.dir/flags.make
 CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.obj: CMakeFiles/NetSim_tests.dir/includes_CXX.rsp
 CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.obj: ../test/test_package_pawel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim_tests.dir\test\test_package_pawel.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_package_pawel.cpp"
 
 CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.i: cmake_force
@@ -171,7 +185,7 @@ CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.s: cmake_force
 CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.obj: CMakeFiles/NetSim_tests.dir/flags.make
 CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.obj: CMakeFiles/NetSim_tests.dir/includes_CXX.rsp
 CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.obj: ../test/test_storage_types_pawel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim_tests.dir\test\test_storage_types_pawel.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_storage_types_pawel.cpp"
 
 CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.i: cmake_force
@@ -182,24 +196,24 @@ CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.s"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_storage_types_pawel.cpp" -o CMakeFiles\NetSim_tests.dir\test\test_storage_types_pawel.cpp.s
 
-CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj: CMakeFiles/NetSim_tests.dir/flags.make
-CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj: CMakeFiles/NetSim_tests.dir/includes_CXX.rsp
-CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj: ../test/test_nodes_pawel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim_tests.dir\test\test_nodes_pawel.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_nodes_pawel.cpp"
+CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.obj: CMakeFiles/NetSim_tests.dir/flags.make
+CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.obj: CMakeFiles/NetSim_tests.dir/includes_CXX.rsp
+CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.obj: ../test/test_Factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim_tests.dir\test\test_Factory.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_Factory.cpp"
 
-CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_nodes_pawel.cpp" > CMakeFiles\NetSim_tests.dir\test\test_nodes_pawel.cpp.i
+CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_Factory.cpp" > CMakeFiles\NetSim_tests.dir\test\test_Factory.cpp.i
 
-CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_nodes_pawel.cpp" -o CMakeFiles\NetSim_tests.dir\test\test_nodes_pawel.cpp.s
+CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\test_Factory.cpp" -o CMakeFiles\NetSim_tests.dir\test\test_Factory.cpp.s
 
 CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj: CMakeFiles/NetSim_tests.dir/flags.make
 CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj: CMakeFiles/NetSim_tests.dir/includes_CXX.rsp
 CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj: ../test/main_gtest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj"
 	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NetSim_tests.dir\test\main_gtest.cpp.obj -c "C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\test\main_gtest.cpp"
 
 CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.i: cmake_force
@@ -216,12 +230,13 @@ NetSim_tests_OBJECTS = \
 "CMakeFiles/NetSim_tests.dir/src/storage_types.cpp.obj" \
 "CMakeFiles/NetSim_tests.dir/src/nodes.cpp.obj" \
 "CMakeFiles/NetSim_tests.dir/src/helpers.cpp.obj" \
+"CMakeFiles/NetSim_tests.dir/src/factory.cpp.obj" \
 "CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj" \
 "CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj" \
 "CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj" \
 "CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.obj" \
 "CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.obj" \
-"CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj" \
+"CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.obj" \
 "CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj"
 
 # External object files for target NetSim_tests
@@ -231,12 +246,13 @@ NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/src/package.cpp.obj
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/src/storage_types.cpp.obj
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/src/nodes.cpp.obj
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/src/helpers.cpp.obj
+NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/src/factory.cpp.obj
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.obj
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.obj
-NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj
+NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.obj
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.obj
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/build.make
 NetSim_tests.exe: lib/libgmockd.a
@@ -244,7 +260,7 @@ NetSim_tests.exe: lib/libgtestd.a
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/linklibs.rsp
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/objects1.rsp
 NetSim_tests.exe: CMakeFiles/NetSim_tests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable NetSim_tests.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\PC\Desktop\uczelnia\semestr 3\informatyka 2\NetSim\NetSim\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable NetSim_tests.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\NetSim_tests.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

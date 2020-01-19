@@ -30,13 +30,11 @@ public:
 //---------------------------------------------------------------------------------------------------------------------
 
 class ReceiverPreferences{
+public:
     using preferences_t = std::map<IPackageReceiver*, double>;
     using const_iterator = preferences_t::const_iterator;
     using iterator = preferences_t::iterator;
-
-private:
     preferences_t preferences_map;
-public:
     ProbabilityGenerator random_function_ = [](){ return (double)rand() / RAND_MAX; };
     const preferences_t& get_preferences()const { return preferences_map;}
     const_iterator cbegin() const { return preferences_map.cbegin(); }

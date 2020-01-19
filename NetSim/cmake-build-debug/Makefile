@@ -260,6 +260,36 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/factory.obj: src/factory.cpp.obj
+
+.PHONY : src/factory.obj
+
+# target to build an object file
+src/factory.cpp.obj:
+	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/factory.cpp.obj
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/src/factory.cpp.obj
+.PHONY : src/factory.cpp.obj
+
+src/factory.i: src/factory.cpp.i
+
+.PHONY : src/factory.i
+
+# target to preprocess a source file
+src/factory.cpp.i:
+	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/factory.cpp.i
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/src/factory.cpp.i
+.PHONY : src/factory.cpp.i
+
+src/factory.s: src/factory.cpp.s
+
+.PHONY : src/factory.s
+
+# target to generate assembly for a file
+src/factory.cpp.s:
+	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/factory.cpp.s
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/src/factory.cpp.s
+.PHONY : src/factory.cpp.s
+
 src/helpers.obj: src/helpers.cpp.obj
 
 .PHONY : src/helpers.obj
@@ -407,6 +437,33 @@ test/main_gtest.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/main_gtest.cpp.s
 .PHONY : test/main_gtest.cpp.s
 
+test/test_Factory.obj: test/test_Factory.cpp.obj
+
+.PHONY : test/test_Factory.obj
+
+# target to build an object file
+test/test_Factory.cpp.obj:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.obj
+.PHONY : test/test_Factory.cpp.obj
+
+test/test_Factory.i: test/test_Factory.cpp.i
+
+.PHONY : test/test_Factory.i
+
+# target to preprocess a source file
+test/test_Factory.cpp.i:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.i
+.PHONY : test/test_Factory.cpp.i
+
+test/test_Factory.s: test/test_Factory.cpp.s
+
+.PHONY : test/test_Factory.s
+
+# target to generate assembly for a file
+test/test_Factory.cpp.s:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_Factory.cpp.s
+.PHONY : test/test_Factory.cpp.s
+
 test/test_nodes.obj: test/test_nodes.cpp.obj
 
 .PHONY : test/test_nodes.obj
@@ -433,33 +490,6 @@ test/test_nodes.s: test/test_nodes.cpp.s
 test/test_nodes.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.s
 .PHONY : test/test_nodes.cpp.s
-
-test/test_nodes_pawel.obj: test/test_nodes_pawel.cpp.obj
-
-.PHONY : test/test_nodes_pawel.obj
-
-# target to build an object file
-test/test_nodes_pawel.cpp.obj:
-	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.obj
-.PHONY : test/test_nodes_pawel.cpp.obj
-
-test/test_nodes_pawel.i: test/test_nodes_pawel.cpp.i
-
-.PHONY : test/test_nodes_pawel.i
-
-# target to preprocess a source file
-test/test_nodes_pawel.cpp.i:
-	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.i
-.PHONY : test/test_nodes_pawel.cpp.i
-
-test/test_nodes_pawel.s: test/test_nodes_pawel.cpp.s
-
-.PHONY : test/test_nodes_pawel.s
-
-# target to generate assembly for a file
-test/test_nodes_pawel.cpp.s:
-	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_nodes_pawel.cpp.s
-.PHONY : test/test_nodes_pawel.cpp.s
 
 test/test_package.obj: test/test_package.cpp.obj
 
@@ -590,6 +620,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/factory.obj
+	@echo ... src/factory.i
+	@echo ... src/factory.s
 	@echo ... src/helpers.obj
 	@echo ... src/helpers.i
 	@echo ... src/helpers.s
@@ -605,12 +638,12 @@ help:
 	@echo ... test/main_gtest.obj
 	@echo ... test/main_gtest.i
 	@echo ... test/main_gtest.s
+	@echo ... test/test_Factory.obj
+	@echo ... test/test_Factory.i
+	@echo ... test/test_Factory.s
 	@echo ... test/test_nodes.obj
 	@echo ... test/test_nodes.i
 	@echo ... test/test_nodes.s
-	@echo ... test/test_nodes_pawel.obj
-	@echo ... test/test_nodes_pawel.i
-	@echo ... test/test_nodes_pawel.s
 	@echo ... test/test_package.obj
 	@echo ... test/test_package.i
 	@echo ... test/test_package.s
