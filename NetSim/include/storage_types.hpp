@@ -48,6 +48,6 @@ public:
     virtual bool empty()const override { return products.empty();}
     virtual void push(Package &&package) override {products.emplace_back(std::move(package));}
     virtual std::size_t size()const override { return products.size();}
-    ~PackageQueue(){};
+    //~PackageQueue(){};
 };
 #endif //NETSIM_STORAGE_TYPES_HPP

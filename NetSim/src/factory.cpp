@@ -2,6 +2,8 @@
 // Created by Jean Jacob on 2020-01-18.
 
 
+#include <factory.hpp>
+
 #include "factory.hpp"
 
 enum color_enum{
@@ -51,7 +53,7 @@ bool sender_has_storehouse(PackageSender* sender, std::map<PackageSender*, color
 }
 
 
-bool Factory::is_consistent() {
+bool Factory::is_consistent(){
     std::map<PackageSender*, color_enum> color_map;
     for(auto &node : workers){
         color_map[&node] = color_enum::WHITE;
@@ -63,12 +65,29 @@ bool Factory::is_consistent() {
         try{
             sender_has_storehouse(&it, color_map);
         }
-        catch (std::logic_error &){
+        catch (std::logic_error &) {
             return false;
         }
     }
-
-    return false;
+    return true;
 }
 
+void Factory::do_deliveries(Time time) {
+    for(auto& member : ramps){
+        member.deliver_goods(time);
+    }
+}
 
+void Factory::do_package_passing(){
+    for(auto& member : workers ){
+        member.send_package();
+    }
+    for(auto& member : ramps ){
+        member.send_package();
+    }
+}
+void Factory::do_work(Time time){
+    for(auto& member : workers){
+        member.do_work(time);
+    }
+}

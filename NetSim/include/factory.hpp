@@ -7,57 +7,59 @@
 
 #include "storage_types.hpp"
 #include "nodes.hpp"
-#include "types.hpp"
-#include "package.hpp"
 
-template <class Node>
+
+template <typename Node>
 class NodeCollection{
-    using container_t = typename std::list<Node>;
-    using iterator = typename container_t::iterator;
-    using const_iterator = typename container_t::const_iterator;
+    public:
+        using container_t = typename std::list<Node>;
+        using iterator = typename container_t::iterator;
+        using const_iterator = typename container_t::const_iterator;
     private:
         container_t collection;
     public:
-        void add(Node& node) { collection.push_back(std::move(node)); };
-        //void remove_by_id(ElementID id_){};
-        //NodeCollection<Node>::iterator find_by_id(ElementID id_)
-        //NodeCollection<Node>::const_iterator find_by_id(ElementID id_){};
+        void add(Node&& node) { collection.emplace_back(std::move(node));};
+        void remove_by_id(ElementID id_){ collection.erase(find_by_id(id_));};
+        iterator find_by_id(ElementID id_) { return std::find_if(collection.begin(), collection.end(), [&](auto &elem) { return elem.get_id() == id_; });};
+        const_iterator find_by_id(ElementID id_) const { return std::find_if(collection.begin(), collection.end(), [&](const auto &elem) { return elem.get_id() == id_; });};
 
-        NodeCollection<Node>::iterator begin() { return collection.begin();};
-        NodeCollection<Node>::iterator end(){ return collection.end(); };
-        NodeCollection<Node>::iterator cbegin() { return collection.cbegin();};
-        NodeCollection<Node>::iterator cend(){ return collection.cend(); };
+        iterator begin() { return collection.begin();};
+        iterator end(){ return collection.end(); };
+        const_iterator cbegin(){ return collection.cbegin();};
+        const_iterator cend(){ return collection.cend(); };
 };
 
 class Factory{
     private:
+        //Kolekcje węzłów
         NodeCollection<Worker> workers;
         NodeCollection<Ramp> ramps;
         NodeCollection<Storehouse> storehouses;
 
     public:
-        void add_ramp(Ramp&& ramp){ ramps.add(ramp);};
-//        void remove_ramp(ElementID id){};
-//        NodeCollection<Ramp>::iterator find_ramp_by_id(ElementID id){};
-//        NodeCollection<Ramp>::const_iterator find_ramp_by_id(ElementID id){};
+        //Ramp
+        void add_ramp(Ramp&& ramp){ ramps.add(std::move(ramp)); };
+        void remove_ramp(ElementID id){ ramps.remove_by_id(id); };
+        NodeCollection<Ramp>::iterator find_ramp_by_id(ElementID id){ return ramps.find_by_id(id); };
+        NodeCollection<Ramp>::const_iterator find_ramp_by_id(ElementID id) const { return ramps.find_by_id(id); };
 
-//
-//        void add_worker(Worker&& worker){ workers.add(worker);};
-//        void remove_worker(ElementID id){};
-//        NodeCollection<Worker>::iterator find_worker_by_id(ElementID id){};
-//        NodeCollection<Worker>::const_iterator find_worker_by_id(ElementID id){};
+        //Worker
+        void add_worker(Worker&& worker){ workers.add(std::move(worker));};
+        void remove_worker(ElementID id){ workers.remove_by_id(id); };
+        NodeCollection<Worker>::iterator find_worker_by_id(ElementID id){ return workers.find_by_id(id);};
+        NodeCollection<Worker>::const_iterator find_worker_by_id(ElementID id) const { return workers.find_by_id(id); };
 
-//
-//        void add_storehouse(Storehouse&& storehouse){ storehouses.add(storehouse);};
-//        void remove_storehouse(ElementID id){};
-//        NodeCollection<Storehouse>::iterator find_storehouse_by_id(ElementID id){};
-//        NodeCollection<Storehouse>::const_iterator find_storehouse_by_id(ElementID id){};
+        //Storehouse
+        void add_storehouse(Storehouse&& storehouse){ storehouses.add(std::move(storehouse));};
+        void remove_storehouse(ElementID id){ storehouses.remove_by_id(id); };
+        NodeCollection<Storehouse>::iterator find_storehouse_by_id(ElementID id){ return storehouses.find_by_id(id); };
+        NodeCollection<Storehouse>::const_iterator find_storehouse_by_id(ElementID id) const { return storehouses.find_by_id(id); };
 
 
         bool is_consistent();
-        //void do_deliveries(Time time);
-        //void do_package_passing(){};
-        //void do_work(Time time){};
+        void do_deliveries(Time time);
+        void do_package_passing();
+        void do_work(Time time);
 };
 
 
