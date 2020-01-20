@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/NetSim_tests.dir/test/test_nodes.cpp.obj"
   "CMakeFiles/NetSim_tests.dir/test/test_package.cpp.obj"
   "CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.obj"
+  "CMakeFiles/NetSim_tests.dir/test/test_simulate.cpp.obj"
   "CMakeFiles/NetSim_tests.dir/test/test_storage_types.cpp.obj"
   "CMakeFiles/NetSim_tests.dir/test/test_storage_types_pawel.cpp.obj"
   "NetSim_tests.exe"

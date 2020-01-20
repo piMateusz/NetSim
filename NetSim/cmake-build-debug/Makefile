@@ -575,6 +575,33 @@ test/test_package_pawel.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.s
 .PHONY : test/test_package_pawel.cpp.s
 
+test/test_simulate.obj: test/test_simulate.cpp.obj
+
+.PHONY : test/test_simulate.obj
+
+# target to build an object file
+test/test_simulate.cpp.obj:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_simulate.cpp.obj
+.PHONY : test/test_simulate.cpp.obj
+
+test/test_simulate.i: test/test_simulate.cpp.i
+
+.PHONY : test/test_simulate.i
+
+# target to preprocess a source file
+test/test_simulate.cpp.i:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_simulate.cpp.i
+.PHONY : test/test_simulate.cpp.i
+
+test/test_simulate.s: test/test_simulate.cpp.s
+
+.PHONY : test/test_simulate.s
+
+# target to generate assembly for a file
+test/test_simulate.cpp.s:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_simulate.cpp.s
+.PHONY : test/test_simulate.cpp.s
+
 test/test_storage_types.obj: test/test_storage_types.cpp.obj
 
 .PHONY : test/test_storage_types.obj
@@ -683,6 +710,9 @@ help:
 	@echo ... test/test_package_pawel.obj
 	@echo ... test/test_package_pawel.i
 	@echo ... test/test_package_pawel.s
+	@echo ... test/test_simulate.obj
+	@echo ... test/test_simulate.i
+	@echo ... test/test_simulate.s
 	@echo ... test/test_storage_types.obj
 	@echo ... test/test_storage_types.i
 	@echo ... test/test_storage_types.s
