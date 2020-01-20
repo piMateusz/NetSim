@@ -36,7 +36,18 @@ class Factory{
         NodeCollection<Ramp> ramps;
         NodeCollection<Storehouse> storehouses;
         template<typename Node>
-        void remove_receiver(NodeCollection<Node>& collection,ElementID id);
+        void remove_receiver(NodeCollection<Node>& collection, ElementID id) {
+                if(collection.find_by_id(id) == collection.end()) return;
+                for(auto& elem: workers){
+                        elem.receiver_preferences_.remove_receiver(&(*collection.find_by_id(id)));
+                }
+                for(auto& elem: ramps){
+                        elem.receiver_preferences_.remove_receiver(&(*collection.find_by_id(id)));
+                }
+
+                collection.remove_by_id(id);
+    }
+
     public:
         //Ramp
         void add_ramp(Ramp&& ramp){ ramps.add(std::move(ramp)); };
@@ -46,7 +57,8 @@ class Factory{
 
         //Worker
         void add_worker(Worker&& worker){ workers.add(std::move(worker));};
-        void remove_worker(ElementID id){ workers.remove_by_id(id); };
+        //void remove_worker(ElementID id){ workers.remove_by_id(id); };
+        void remove_worker(ElementID id){this->remove_receiver(workers,id);};
         NodeCollection<Worker>::iterator find_worker_by_id(ElementID id){ return workers.find_by_id(id);};
         NodeCollection<Worker>::const_iterator find_worker_by_id(ElementID id) const { return workers.find_by_id(id); };
 
