@@ -56,7 +56,6 @@ class Factory{
         NodeCollection<Storehouse>::iterator find_storehouse_by_id(ElementID id){ return storehouses.find_by_id(id); };
         NodeCollection<Storehouse>::const_iterator find_storehouse_by_id(ElementID id) const { return storehouses.find_by_id(id); };
 
-
         bool is_consistent();
         void do_deliveries(Time time);
         void do_package_passing();
