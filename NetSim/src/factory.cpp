@@ -2,31 +2,35 @@
 // Created by Jean Jacob on 2020-01-18.
 
 
+#include <factory.hpp>
+
 #include "factory.hpp"
 
 enum color_enum{
     WHITE, YELLOW, GREEN
 };
 
-template<typename Node>
-void Factory::remove_receiver(NodeCollection<Node>& collection, ElementID id) {
+//template<typename Node>
+//void Factory::remove_receiver(NodeCollection<Node>& collection, ElementID id) {
+//
+//    if (collection.cbegin()->get_receiver_type() == ReceiverType::Worker) {
+//        auto it = find_worker_by_id(id);
+//        for(auto& worker: workers) {
+//            worker.receiver_preferences_.remove_receiver(&(*it));
+//        }
+//        for(auto& ramp: ramps) {
+//            ramp.receiver_preferences_.remove_receiver(&(*it));
+//        }
+//    }
+//    else if (collection.cbegin()->get_receiver_type() == ReceiverType::Storehouse) {
+//        auto it = find_storehouse_by_id(id);
+//        for(auto& worker: workers) {
+//            worker.receiver_preferences_.remove_receiver(&(*it));
+//        }
+//    }
+//}
 
-    if (collection.cbegin()->get_receiver_type() == ReceiverType::Worker) {
-        auto it = find_worker_by_id(id);
-        for(auto& worker: workers) {
-            worker.receiver_preferences_.remove_receiver(&(*it));
-        }
-        for(auto& ramp: ramps) {
-            ramp.receiver_preferences_.remove_receiver(&(*it));
-        }
-    }
-    else if (collection.cbegin()->get_receiver_type() == ReceiverType::Storehouse) {
-        auto it = find_storehouse_by_id(id);
-        for(auto& worker: workers) {
-            worker.receiver_preferences_.remove_receiver(&(*it));
-        }
-    }
-}
+
 
 bool sender_has_storehouse(PackageSender* sender, std::map<PackageSender*, color_enum> color_map){
     if (color_map[sender] == color_enum::GREEN){
@@ -109,3 +113,9 @@ void Factory::do_work(Time time){
         member.do_work(time);
     }
 }
+
+
+
+
+
+
