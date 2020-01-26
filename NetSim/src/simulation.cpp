@@ -11,8 +11,9 @@ void simulation(Factory factory, TimeOffset d, std::function<void(Factory&, Time
             factory.do_work(time);
         }
         catch(std::logic_error &){
-            throw std::logic_error('Niespójna');
+            throw std::logic_error(reinterpret_cast<const char *>('n'));
         }
     }
 }
+
 

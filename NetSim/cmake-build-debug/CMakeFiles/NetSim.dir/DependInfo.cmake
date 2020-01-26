@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/helpers.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim.dir/src/helpers.cpp.obj"
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim.dir/src/nodes.cpp.obj"
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/package.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim.dir/src/package.cpp.obj"
+  "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/simulation.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim.dir/src/simulation.cpp.obj"
   "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/storage_types.cpp" "C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/cmake-build-debug/CMakeFiles/NetSim.dir/src/storage_types.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

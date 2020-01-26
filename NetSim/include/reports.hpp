@@ -5,15 +5,12 @@
 #ifndef NETSIM_REPORTS_HPP
 #define NETSIM_REPORTS_HPP
 class IReportNotifier{
-    ;
 };
 
 class SpecificTurnsReportNotifier{
-    ;
 };
 
 class IntervalReportNotifier{
-    ;
 };
 
 // function generate_structure_report();

@@ -69,8 +69,11 @@ class Factory{
         void remove_storehouse(ElementID id){ storehouses.remove_by_id(id); };
         NodeCollection<Storehouse>::iterator find_storehouse_by_id(ElementID id){ return storehouses.find_by_id(id); };
         NodeCollection<Storehouse>::const_iterator find_storehouse_by_id(ElementID id) const { return storehouses.find_by_id(id); };
+<<<<<<< HEAD
+=======
         NodeCollection<Storehouse>::const_iterator storehouse_cbegin(){ return storehouses.cbegin();};
         NodeCollection<Storehouse>::const_iterator storehouse_cend(){ return storehouses.cend(); };
+>>>>>>> 991ae1f6bc3e457673fe6b6303833332b2f0cfe1
 
         bool is_consistent();
         void do_deliveries(Time time);

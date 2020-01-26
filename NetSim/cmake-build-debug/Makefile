@@ -380,6 +380,36 @@ src/package.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/src/package.cpp.s
 .PHONY : src/package.cpp.s
 
+src/simulation.obj: src/simulation.cpp.obj
+
+.PHONY : src/simulation.obj
+
+# target to build an object file
+src/simulation.cpp.obj:
+	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/simulation.cpp.obj
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/src/simulation.cpp.obj
+.PHONY : src/simulation.cpp.obj
+
+src/simulation.i: src/simulation.cpp.i
+
+.PHONY : src/simulation.i
+
+# target to preprocess a source file
+src/simulation.cpp.i:
+	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/simulation.cpp.i
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/src/simulation.cpp.i
+.PHONY : src/simulation.cpp.i
+
+src/simulation.s: src/simulation.cpp.s
+
+.PHONY : src/simulation.s
+
+# target to generate assembly for a file
+src/simulation.cpp.s:
+	$(MAKE) -f CMakeFiles\NetSim.dir\build.make CMakeFiles/NetSim.dir/src/simulation.cpp.s
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/src/simulation.cpp.s
+.PHONY : src/simulation.cpp.s
+
 src/storage_types.obj: src/storage_types.cpp.obj
 
 .PHONY : src/storage_types.obj
@@ -545,6 +575,33 @@ test/test_package_pawel.cpp.s:
 	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_package_pawel.cpp.s
 .PHONY : test/test_package_pawel.cpp.s
 
+test/test_simulate.obj: test/test_simulate.cpp.obj
+
+.PHONY : test/test_simulate.obj
+
+# target to build an object file
+test/test_simulate.cpp.obj:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_simulate.cpp.obj
+.PHONY : test/test_simulate.cpp.obj
+
+test/test_simulate.i: test/test_simulate.cpp.i
+
+.PHONY : test/test_simulate.i
+
+# target to preprocess a source file
+test/test_simulate.cpp.i:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_simulate.cpp.i
+.PHONY : test/test_simulate.cpp.i
+
+test/test_simulate.s: test/test_simulate.cpp.s
+
+.PHONY : test/test_simulate.s
+
+# target to generate assembly for a file
+test/test_simulate.cpp.s:
+	$(MAKE) -f CMakeFiles\NetSim_tests.dir\build.make CMakeFiles/NetSim_tests.dir/test/test_simulate.cpp.s
+.PHONY : test/test_simulate.cpp.s
+
 test/test_storage_types.obj: test/test_storage_types.cpp.obj
 
 .PHONY : test/test_storage_types.obj
@@ -632,6 +689,9 @@ help:
 	@echo ... src/package.obj
 	@echo ... src/package.i
 	@echo ... src/package.s
+	@echo ... src/simulation.obj
+	@echo ... src/simulation.i
+	@echo ... src/simulation.s
 	@echo ... src/storage_types.obj
 	@echo ... src/storage_types.i
 	@echo ... src/storage_types.s
@@ -650,6 +710,9 @@ help:
 	@echo ... test/test_package_pawel.obj
 	@echo ... test/test_package_pawel.i
 	@echo ... test/test_package_pawel.s
+	@echo ... test/test_simulate.obj
+	@echo ... test/test_simulate.i
+	@echo ... test/test_simulate.s
 	@echo ... test/test_storage_types.obj
 	@echo ... test/test_storage_types.i
 	@echo ... test/test_storage_types.s
