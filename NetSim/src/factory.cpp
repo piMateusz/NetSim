@@ -10,28 +10,6 @@ enum color_enum{
     WHITE, YELLOW, GREEN
 };
 
-//template<typename Node>
-//void Factory::remove_receiver(NodeCollection<Node>& collection, ElementID id) {
-//
-//    if (collection.cbegin()->get_receiver_type() == ReceiverType::Worker) {
-//        auto it = find_worker_by_id(id);
-//        for(auto& worker: workers) {
-//            worker.receiver_preferences_.remove_receiver(&(*it));
-//        }
-//        for(auto& ramp: ramps) {
-//            ramp.receiver_preferences_.remove_receiver(&(*it));
-//        }
-//    }
-//    else if (collection.cbegin()->get_receiver_type() == ReceiverType::Storehouse) {
-//        auto it = find_storehouse_by_id(id);
-//        for(auto& worker: workers) {
-//            worker.receiver_preferences_.remove_receiver(&(*it));
-//        }
-//    }
-//}
-
-
-
 bool sender_has_storehouse(PackageSender* sender, std::map<PackageSender*, color_enum> color_map){
     if (color_map[sender] == color_enum::GREEN){
         return true;
