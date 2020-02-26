@@ -23,11 +23,11 @@ add_executable(NetSim ${SOURCE_FILES} main.cpp)
 # == Unit testing using Google Testing Framework ==
 
 set(SOURCES_FILES_TESTS
-        test/test_package.cpp
-        test/test_storage_types.cpp
-        test/test_nodes.cpp
-        test/test_package_pawel.cpp
-        test/test_storage_types_pawel.cpp
+        #test/test_package.cpp
+        #test/test_storage_types.cpp
+        #test/test_nodes.cpp
+        #test/test_package_pawel.cpp
+        #test/test_storage_types_pawel.cpp
         #test/test_nodes_pawel.cpp
         test/test_Factory.cpp
         #test/test_factory_io.cpp

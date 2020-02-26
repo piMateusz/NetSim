@@ -6,6 +6,24 @@
 
 #IncludeRegexTransform: 
 
+../include/factory.hpp
+storage_types.hpp
+../include/storage_types.hpp
+nodes.hpp
+../include/nodes.hpp
+
+../include/helpers.hpp
+functional
+-
+random
+-
+types.hpp
+../include/types.hpp
+iostream
+-
+random
+-
+
 ../include/nodes.hpp
 storage_types.hpp
 ../include/storage_types.hpp
@@ -13,6 +31,8 @@ memory
 -
 map
 -
+helpers.hpp
+../include/helpers.hpp
 
 ../include/package.hpp
 types.hpp
@@ -36,7 +56,37 @@ list
 functional
 ../include/functional
 
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.cpp
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/main.cpp
+iostream
+-
+storage_types.hpp
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/storage_types.hpp
+
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/factory.cpp
+factory.hpp
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/factory.hpp
+
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/helpers.cpp
+helpers.hpp
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/helpers.hpp
+cstdlib
+-
+random
+-
+
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/nodes.cpp
 nodes.hpp
-C:/Users/PC/Desktop/uczelnia/semestr 3/informatyka 2/NetSim/NetSim/src/nodes.hpp
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/nodes.hpp
+
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/package.cpp
+package.hpp
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/package.hpp
+package.hpp
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/package.hpp
+stdexcept
+-
+
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/storage_types.cpp
+storage_types.hpp
+F:/Users/Jean Jacob/Desktop/Informatyka/NetSim/NetSim/src/storage_types.hpp
 
