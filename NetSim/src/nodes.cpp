@@ -1,6 +1,7 @@
 //
 // Created by PC on 02.01.2020.
 //
+#include <iostream>
 #include "nodes.hpp"
 
 //PackageSender
@@ -25,23 +26,28 @@ void Ramp::deliver_goods(const Time time) {
     if ( (time-1) % get_delivery_interval() == 0){
         auto package = Package();
         push_package(std::move(package));
+
     }
 }
 
 void Ramp::send_package(){
-    IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
-    receiver_ptr->receive_package(std::move(*get_sending_buffer()));
-    get_sending_buffer().reset();
+    if(Ramp::get_sending_buffer().has_value()) {
+        IPackageReceiver *receiver_ptr = receiver_preferences_.choose_receiver();
+        receiver_ptr->receive_package(std::move(*get_sending_buffer()));
+        get_sending_buffer().reset();
+    }
 }
 
 // Worker
 
 void Worker::send_package(){
-    if(!start_time_){
+    if(start_time_ == 0 && Worker::get_sending_buffer().has_value()){
         IPackageReceiver* receiver_ptr = receiver_preferences_.choose_receiver();
         receiver_ptr->receive_package(std::move(*get_sending_buffer()));
         get_sending_buffer().reset();
+
     }
+
 }
 
 void Worker::do_work(const Time time){
@@ -55,6 +61,7 @@ void Worker::do_work(const Time time){
     }
     if(start_time_ == time - get_processing_duration())
         start_time_ = 0;
+
 }
 
 
@@ -65,6 +72,7 @@ void Worker::receive_package(Package &&package){
     else{
         push_package(std::move(package));
     }
+
 }
 
 //ReceiverPreferences
